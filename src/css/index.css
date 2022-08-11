@@ -15,7 +15,7 @@ body {
 	min-height: 100vh;
 	height: 100vh;
 	display: grid;
-	grid-template-rows: 80px auto 60px;
+	grid-template-rows: var(--s-height) auto 60px;
 	grid-template-columns: 1fr;
 }
 
@@ -79,7 +79,7 @@ FIXED NAV
 ***********************************/
 .float_nav {
 	position: fixed;
-	top: 10px;
+	top: 15px;
 	width: 60%;
 }
 
@@ -127,12 +127,12 @@ FIXED NAV
 	font-size: clamp(0.8rem, 0.9rem, 1rem);
 	padding: var(--tiny) var(--small);
 	border-radius: var(--medium);
+	text-decoration: underline solid var(--pink) 2px;
 }
 
 .float_nav_content li:hover {
-	background-color: var(--dark-pink);
+	background-color: var(--pink);
 	color: var(--white);
-	text-decoration: underline solid var(--pink) 2px;
 }
 
 .float_nav_selected {
@@ -140,6 +140,7 @@ FIXED NAV
 	border: none;
 
 	color: var(--dark);
+	box-shadow: var(--clay-shadow);
 }
 
 /***********************************
@@ -159,20 +160,45 @@ HAMBURGUER
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
 	animation: float 5s ease-in-out infinite, touch-shadow 5s ease-in-out infinite;
+	background-color: var(--50-less-white);
+	box-shadow: var(--clay-shadow);
 }
 
 .main_container {
 	grid-row: 2;
 	width: 90%;
-	max-width: 80ch;
+	max-width: 150ch;
+	height: 70vh;
+
 	display: grid;
-	gap: 10px;
-	padding-bottom: var(--medium);
-	grid-template-columns: 1fr 1fr;
-	margin: auto;
 	place-items: center;
-	place-content: center;
-	z-index: 1;
+	gap: 20px;
+
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: auto;
+	z-index: 10;
+}
+
+.main_container > article {
+	height: 65vh;
+	overflow: scroll;
+}
+
+.main_container > article {
+	background-color: var(--50-less-white);
+	/* background-color: var(--less-dark); */
+	/* color: var(--white); */
+	padding: var(--base);
+	border-radius: var(--medium);
+	/* box-shadow: var(--shadow); */
+	box-shadow: var(--clay-shadow);
+}
+
+@media screen and (max-width: 1000px) {
+	.main_container {
+		grid-template-columns: 1fr 1fr;
+		overflow: scroll;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -187,4 +213,43 @@ HAMBURGUER
 	position: absolute;
 	top: var(--small);
 	left: var(--base);
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+	text-align: center;
+	font-weight: 700;
+	margin: var(--small) 0;
+}
+
+h1 {
+	font-size: clamp(1.6rem, 1.8vw + 1rem, 2.5rem);
+	text-decoration: underline var(--pink) var(--decoration);
+}
+
+h2 {
+	font-size: clamp(1.2rem, 1vw + 1rem, 2rem);
+	color: var(--dark-pink);
+	text-decoration: underline var(--white) var(--decoration);
+}
+
+h3 {
+	font-size: clamp(0.9rem, 0.9vw + 1rem, 1.8rem);
+	font-style: italic;
+	text-decoration: var(--dark-pink) var(--decoration) underline;
+}
+
+p {
+	font-size: clamp(0.75rem, 0.2vw + 0.9rem, 1.1rem);
+	line-height: 1.6;
+}
+
+p + * {
+	margin-top: var(--small);
+}
+
+hr {
+	margin: var(--medium) auto;
+	width: calc(25ch + 10%);
+	border: none;
+	border-top: var(--decoration) solid var(--white);
 }

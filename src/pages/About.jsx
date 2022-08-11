@@ -9,23 +9,28 @@ function About() {
 	return (
 		<section className="main_container" role="note" data-aos="fade-up" id="about">
 			<article className="description-page">
-				<h1>Hey there! Olá, pessoal! 👋🏽</h1>
-				<img src={profileImage} alt="" style={{ width: "350px" }} />
-				<h2>Skills</h2>
+				<img src={profileImage} alt="" style={{ width: "450px" }} />
+				<blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing el</blockquote>
 			</article>
 			<article className="description-page">
-				<h2>About Me</h2>
+				<h1>Hey there!👋🏽</h1>
 				<p>
-					I'm a <strong>front-end developer</strong> currently based on Portugal, building
-					web applications using React. I like to deliver a good user experiences,
-					focusing on responsiveness and other things!
+					I'm Aline, a <strong>front-end developer</strong> currently based on Portugal,
+					building web applications using React. I like to deliver a good user
+					experiences, focusing on responsiveness and other things!
 				</p>
 				<p>
 					I'm a hard worker and eager to learn more. I'm looking for more knowledge and
 					for a chance to contribute in a real project!
 				</p>
 				<hr />
-				<h2>Some facts about me:</h2>
+				<h3>Skills</h3>
+				<p>LMKSMDA</p>
+				<p>LMKSMDA</p>
+			</article>
+
+			<article className="skills">
+				<h3>Some facts about me:</h3>
 				<p>
 					💻 My very first experience with coding was a long time ago, making some
 					fansites of things I liked when I was a kid!
@@ -35,7 +40,8 @@ function About() {
 					🎮 I love books, games and animation. I also already worked with games in the
 					past!
 				</p>
-				<h2>Socials</h2>
+				<hr />
+				<h3>Socials</h3>
 				<ul>
 					<li>Github</li>
 					<li>LinkedIn</li>
