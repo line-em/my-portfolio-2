@@ -36,6 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.15"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["@vitejs/plugin-react", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:2.0.0"],\
+            ["phosphor-react", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:1.4.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:18.2.0"],\
             ["react-router-dom", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:6.3.0"],\
@@ -1815,6 +1816,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["phosphor-react", [\
+        ["npm:1.4.1", {\
+          "packageLocation": "./.yarn/cache/phosphor-react-npm-1.4.1-a39b349d8f-94aa316eca.zip/node_modules/phosphor-react/",\
+          "packageDependencies": [\
+            ["phosphor-react", "npm:1.4.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:1.4.1", {\
+          "packageLocation": "./.yarn/__virtual__/phosphor-react-virtual-79b40e71f0/0/cache/phosphor-react-npm-1.4.1-a39b349d8f-94aa316eca.zip/node_modules/phosphor-react/",\
+          "packageDependencies": [\
+            ["phosphor-react", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:1.4.1"],\
+            ["@types/react", "npm:18.0.15"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["picocolors", [\
         ["npm:1.0.0", {\
           "packageLocation": "./.yarn/cache/picocolors-npm-1.0.0-d81e0b1927-a2e8092dd8.zip/node_modules/picocolors/",\
@@ -1832,6 +1855,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.15"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["@vitejs/plugin-react", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:2.0.0"],\
+            ["phosphor-react", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:1.4.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:18.2.0"],\
             ["react-router-dom", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:6.3.0"],\

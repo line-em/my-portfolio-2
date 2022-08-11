@@ -1,0 +1,44 @@
+:root {
+	/*font*/
+	--sans: "Assistant", Helvetica, sans-serif;
+	--serif: "Fraunces", Georgia, serif;
+
+	/*rem sizing*/
+	--decoration: 0.1rem;
+	--tiny: 0.5rem;
+	--small: 1rem;
+	--base: 1.5rem;
+	--medium: 2rem;
+	--large: 3rem;
+	--largest: 5rem;
+
+	/*shadows*/
+	--shadow: 0 0.5rem 2rem #16151a4e;
+	--clay-shadow: 0 10px 80px var(--dark), inset 0 -8px 25px var(--dark-pink),
+		inset 0px 5px 10px var(--white);
+
+	/*base colors*/
+	--pink: #b97dc6;
+	--less-pink: #d5a0e1;
+	--dark-pink: #70257d;
+	--dark: #14071a;
+	--less-dark: #221927;
+	--white: #f9f8fc;
+
+	/*gradient*/
+	--grad-purple: rgb(134, 88, 185);
+
+	/*transparency*/
+	--50-less-dark: #22192779;
+
+	/*swirl*/
+	--s-height: 200px;
+	--s-mar-top: -20px;
+
+	/*transition*/
+	--base-transition: all 0.2s ease-in-out;
+}
+
+* {
+	transition: var(--base-transition);
+}
