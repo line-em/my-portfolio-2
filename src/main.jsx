@@ -1,11 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import "./css/importStyles.js";
 import { BrowserRouter } from "react-router-dom";
-import "./css/reset.css";
-import "./css/root.css";
-import "./css/keyframes.css";
-import "./css/index.css";
 import { Sparkle } from "phosphor-react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -40,8 +37,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 		<span className="sparkle">
 			<Sparkle size={24} color="#d3abde" weight="duotone" />
 		</span>
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>
+
+		<App />
 	</React.StrictMode>
 );

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Projects = () => {
+const Home = () => {
 	return (
 		<section className="main_container" role="note" data-aos="fade-up" id="about">
 			<article className="description-page">
@@ -10,4 +10,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default Home;

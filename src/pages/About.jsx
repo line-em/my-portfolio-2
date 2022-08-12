@@ -17,7 +17,8 @@ function About() {
 				<p>
 					I'm Aline, a <strong>front-end developer</strong> currently based on Portugal,
 					building web applications using React. I like to deliver a good user
-					experiences, focusing on responsiveness and other things!
+					experiences, focusing on responsiveness and other things! As of now, I work as
+					an designer/illustrator, but I'm looking forward to a career change!
 				</p>
 				<p>
 					I'm a hard worker and eager to learn more. I'm looking for more knowledge and
@@ -25,15 +26,21 @@ function About() {
 				</p>
 				<hr />
 				<h3>Skills</h3>
-				<p>LMKSMDA</p>
-				<p>LMKSMDA</p>
+				<p>HTML / CSS</p>
+				<p>React</p>
+				<p>Javascript</p>
+				<h3>Tooling</h3>
+				<p>Git / Github</p>
+				<p>Yarn / Vite</p>
+				<p>Insomnia (API)</p>
 			</article>
 
 			<article className="skills">
 				<h3>Some facts about me:</h3>
 				<p>
 					💻 My very first experience with coding was a long time ago, making some
-					fansites of things I liked when I was a kid!
+					fansites of things I liked when I was a kid! I'm really glad I've picked up
+					programming again.
 				</p>
 				<p>🐱 I love spending time with my cat, Leia. She's one talkative kitten!</p>
 				<p>

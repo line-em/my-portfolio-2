@@ -19,202 +19,9 @@ body {
 	grid-template-columns: 1fr;
 }
 
-a {
-	color: var(--white);
-	padding: var(--decoration) var(--tiny);
-	text-decoration: var(--dark-pink) var(--decoration) underline solid;
-	display: inline-block;
-	position: relative;
-	cursor: pointer;
-}
-
-a:hover {
-	color: var(--white);
-	transition: color 0.2s ease-in-out;
-}
-
-a:after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	transform: scaleX(0);
-	height: 100%;
-	bottom: 0;
-	left: 0;
-	background: var(--dark-pink);
-	transform-origin: bottom right;
-	transition: transform 0.25s ease-out;
-	z-index: -1;
-}
-
-a:hover:after {
-	transform: scaleX(1);
-	transform-origin: bottom left;
-}
-
-/***********************************
-SVG WAVE
-***********************************/
-
-.custom-shape {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	background-color: var(--less-dark);
-}
-
-.custom-shape svg {
-	position: relative;
-	display: block;
-	max-width: 200%;
-	height: var(--s-height);
-	margin-bottom: -1px;
-	animation: enlarge-wave 13s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-
-/***********************************
-FIXED NAV
-***********************************/
-.float_nav {
-	position: fixed;
-	top: 15px;
-	width: 60%;
-}
-
-.float_nav_content {
-	margin: 0 auto;
-	padding: var(--tiny);
-	width: calc(30vw + 2vw);
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	z-index: 1;
-}
-
-.float_nav_style {
-	color: var(--white);
-	border-radius: var(--medium);
-}
-
-@media screen and (max-width: 1050px) {
-	.float_nav {
-		position: fixed;
-		top: 5px;
-		width: 60%;
-	}
-}
-
-@media screen and (max-width: 700px) {
-	.float_nav {
-		position: fixed;
-		top: 0;
-		width: 50%;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.float_nav_content {
-		display: none;
-	}
-}
-
-.float_nav_content li {
-	text-align: center;
-	cursor: pointer;
-	font-weight: 700;
-	font-size: clamp(0.8rem, 0.9rem, 1rem);
-	padding: var(--tiny) var(--small);
-	border-radius: var(--medium);
-	text-decoration: underline solid var(--pink) 2px;
-}
-
-.float_nav_content li:hover {
-	background-color: var(--pink);
-	color: var(--white);
-}
-
-.float_nav_selected {
-	background-color: var(--less-pink);
-	border: none;
-
-	color: var(--dark);
-	box-shadow: var(--clay-shadow);
-}
-
-/***********************************
-HAMBURGUER
-***********************************/
-
-.hamburger {
-	position: fixed;
-	display: grid;
-	place-items: center;
-	top: var(--base);
-	right: var(--small);
-	width: var(--large);
-	height: var(--large);
-	background-color: var(--pink);
-	border-radius: 50%;
-	transition: all 0.3s ease-in-out;
-	cursor: pointer;
-	animation: float 5s ease-in-out infinite, touch-shadow 5s ease-in-out infinite;
-	background-color: var(--50-less-white);
-	box-shadow: var(--clay-shadow);
-}
-
-.main_container {
-	grid-row: 2;
-	width: 90%;
-	max-width: 150ch;
-	height: 70vh;
-
-	display: grid;
-	place-items: center;
-	gap: 20px;
-
-	grid-template-columns: 1fr 1fr 1fr;
-	margin: auto;
-	z-index: 10;
-}
-
-.main_container > article {
-	height: 65vh;
-	overflow: scroll;
-}
-
-.main_container > article {
-	background-color: var(--50-less-white);
-	/* background-color: var(--less-dark); */
-	/* color: var(--white); */
-	padding: var(--base);
-	border-radius: var(--medium);
-	/* box-shadow: var(--shadow); */
-	box-shadow: var(--clay-shadow);
-}
-
-@media screen and (max-width: 1000px) {
-	.main_container {
-		grid-template-columns: 1fr 1fr;
-		overflow: scroll;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.main_container {
-		grid-template-columns: 1fr;
-		width: 80%;
-		margin: var(--large) auto;
-	}
-}
-
-.sparkle {
-	position: absolute;
-	top: var(--small);
-	left: var(--base);
-}
-
+/************************
+BASE STYLES
+************************/
 :is(h1, h2, h3, h4, h5, h6) {
 	text-align: center;
 	font-weight: 700;
@@ -222,8 +29,14 @@ HAMBURGUER
 }
 
 h1 {
-	font-size: clamp(1.6rem, 1.8vw + 1rem, 2.5rem);
+	font-size: clamp(1.5rem, 2.1vw + 1rem, 3rem);
 	text-decoration: underline var(--pink) var(--decoration);
+	background-image: radial-gradient(circle, var(--grad-purple), var(--dark-pink));
+	color: transparent;
+	background-clip: text;
+	background-size: 200%;
+	background-position: -200%;
+	animation: title-text-gradient 5s linear infinite;
 }
 
 h2 {
@@ -252,4 +65,90 @@ hr {
 	width: calc(25ch + 10%);
 	border: none;
 	border-top: var(--decoration) solid var(--white);
+}
+
+a {
+	color: var(--white);
+	padding: var(--decoration) var(--tiny);
+	text-decoration: none;
+}
+
+a:not(.float_nav_content a) {
+	text-decoration: var(--dark-pink) var(--decoration) underline solid;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+a:not(.float_nav_content a):hover {
+	color: var(--white);
+	transition: color 0.2s ease-in-out;
+}
+
+a:not(.float_nav_content a):after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background: var(--dark-pink);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+	z-index: -1;
+}
+
+a:not(.float_nav_content a):hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+/***********************************
+SVG WAVE
+***********************************/
+
+.custom-shape {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: var(--less-dark);
+}
+
+.custom-shape svg {
+	position: relative;
+	display: block;
+	max-width: 200%;
+	height: var(--s-height);
+	margin-bottom: -1px;
+	animation: enlarge-wave 13s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+/***********************************
+HAMBURGUER
+***********************************/
+
+.hamburger {
+	position: fixed;
+	display: grid;
+	place-items: center;
+	top: var(--base);
+	right: var(--small);
+	width: var(--large);
+	height: var(--large);
+	background-color: var(--pink);
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	animation: float 5s ease-in-out infinite, touch-shadow 5s ease-in-out infinite;
+	background-color: var(--50-less-white);
+	box-shadow: var(--clay-shadow);
+}
+
+.sparkle {
+	position: absolute;
+	top: var(--small);
+	left: var(--base);
 }
