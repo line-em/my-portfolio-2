@@ -9,6 +9,7 @@ body {
 	background: var(--less-pink);
 	background: linear-gradient(to bottom, var(--less-pink) 60%, var(--grad-purple));
 	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 #root {
@@ -22,7 +23,7 @@ body {
 /************************
 BASE STYLES
 ************************/
-:is(h1, h2, h3, h4, h5, h6) {
+:is(h1, h2, h4, h5, h6) {
 	text-align: center;
 	font-weight: 700;
 	margin: var(--small) 0;
@@ -45,17 +46,21 @@ h2 {
 	text-decoration: underline var(--white) var(--decoration);
 }
 
-h3 {
+:is(h3, .typed_text) {
 	font-size: clamp(0.9rem, 0.9vw + 1rem, 1.8rem);
 	font-style: italic;
-	text-decoration: var(--dark-pink) var(--decoration) underline;
+	color: var(--75-less-dark);
+}
+
+.typed_text {
+	color: var(--less-dark);
 }
 
 p {
-	font-size: clamp(0.75rem, 0.2vw + 0.9rem, 1.1rem);
+	font-size: clamp(0.85rem, 0.2vw + 1rem, 1.15rem);
 	line-height: 1.6;
+	font-family: var(--sans);
 }
-
 p + * {
 	margin-top: var(--small);
 }
@@ -73,11 +78,17 @@ a {
 	text-decoration: none;
 }
 
+[data-theme="light"] a {
+	color: var(--less-pink);
+}
+
 a:not(.float_nav_content a) {
-	text-decoration: var(--dark-pink) var(--decoration) underline solid;
+	color: var(--dark-pink);
+
+	font-weight: 700;
+	text-decoration: var(--grad-purple) var(--decoration) underline solid;
 	display: inline-block;
 	position: relative;
-	cursor: pointer;
 }
 
 a:not(.float_nav_content a):hover {
@@ -104,6 +115,43 @@ a:not(.float_nav_content a):hover:after {
 	transform-origin: bottom left;
 }
 
+strong {
+	font-weight: 700;
+	color: var(--dark-pink);
+}
+
+.typed-cursor {
+	font-weight: 700;
+	color: var(--dark-pink);
+}
+
+abbr {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font: 700 var(--small) var(--sans);
+	color: var(--dark-pink);
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: var(--small);
+	margin: var(--medium) auto;
+}
+
+.skills * > * {
+	max-width: 50px;
+	width: 50px;
+	height: auto;
+}
+
+.full-width {
+	width: 90%;
+}
+
 /***********************************
 SVG WAVE
 ***********************************/
@@ -112,9 +160,18 @@ SVG WAVE
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 150%;
 	overflow: hidden;
+	background-image: radial-gradient(#d5a0e1 0.2px, transparent 0.5px);
 	background-color: var(--less-dark);
+	background-size: 10px 10px;
+	z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+	.custom-shape {
+		width: 200%;
+	}
 }
 
 .custom-shape svg {
@@ -123,32 +180,48 @@ SVG WAVE
 	max-width: 200%;
 	height: var(--s-height);
 	margin-bottom: -1px;
-	animation: enlarge-wave 13s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 
+@media screen and (max-width: 400px) {
+	.custom-shape svg {
+		--s-height: 120px;
+	}
+}
 /***********************************
-HAMBURGUER
+buttons
 ***********************************/
 
 .hamburger {
 	position: fixed;
-	display: grid;
-	place-items: center;
-	top: var(--base);
-	right: var(--small);
-	width: var(--large);
-	height: var(--large);
-	background-color: var(--pink);
-	border-radius: 50%;
-	transition: all 0.3s ease-in-out;
-	cursor: pointer;
-	animation: float 5s ease-in-out infinite, touch-shadow 5s ease-in-out infinite;
-	background-color: var(--50-less-white);
-	box-shadow: var(--clay-shadow);
+	right: 0;
+	margin-inline-end: var(--small);
 }
 
-.sparkle {
-	position: absolute;
-	top: var(--small);
-	left: var(--base);
+.button_style {
+	cursor: pointer;
+	padding: var(--tiny);
+	transform: 0;
+}
+
+.button_style:hover {
+	background-color: var(--pink);
+}
+
+.button_style *:active {
+	transform: translateY(3px);
+}
+
+/***********************************
+UTILS
+***********************************/
+
+.border_style {
+	border: solid var(--less-pink) 2px;
+	background-color: var(--less-dark);
+	border-radius: var(--medium);
+}
+
+.float {
+	animation: float 5s ease-in-out infinite;
+	filter: drop-shadow(0 0 50px var(--grad-purple));
 }

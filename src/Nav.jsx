@@ -1,29 +1,39 @@
-import React from "react";
-import { Palette, List } from "phosphor-react";
+import React, { useEffect, useState } from "react";
+import { Moon } from "phosphor-react";
 import { Link } from "react-router-dom";
+import NavItem from "./components/NavItem";
 
 const Nav = () => {
+	const [currentTab, setCurrentTab] = useState("home");
+	const tabs = ["home", "about", "projects", "contact"];
+	const [isDarkMode, setIsDarkMode] = useState(true);
+
+	useEffect(() => {
+		document.querySelector("html").setAttribute("data-theme", isDarkMode ? "dark" : "light");
+	}, [isDarkMode]);
+
+	const navBar = tabs.map((tab) => (
+		<Link to={`/${tab}`}>
+			<NavItem
+				currentTab={currentTab}
+				key={`${tab}+${currentTab}`}
+				tab={tab}
+				setCurrentTab={() => setCurrentTab(tab)}
+			/>
+		</Link>
+	));
+
 	return (
 		<>
-			<nav className="hamburger">
-				<Palette weight="duotone" size={28} />
-				{/* <List weight="bold" size={28} /> */}
-			</nav>
 			<nav className="float_nav">
-				<ul className="float_nav_content float_nav_style">
-					<Link to={"/"}>
-						<li className="float_nav_selected">home</li>
-					</Link>
-					<Link to={"/about"}>
-						<li className="float_nav_content_style">about me</li>
-					</Link>
-					<Link to={"/projects"}>
-						<li className="float_nav_content_style">portfolio</li>
-					</Link>
-					<Link to={"/contact"}>
-						<li className="float_nav_content_style">contact me</li>
-					</Link>
-				</ul>
+				<ul className="float_nav_content float_nav_style">{navBar}</ul>
+				<span
+					className="hamburger border_style button_style"
+					onClick={() => setIsDarkMode(!isDarkMode)}
+				>
+					{/* <List weight="bold" size={28} color="var(--white)" /> */}
+					<Moon size={28} color="var(--white)" weight="fill" />
+				</span>
 			</nav>
 		</>
 	);

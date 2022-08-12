@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:18.2.0"],\
             ["react-router-dom", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:6.3.0"],\
+            ["typed.js", "npm:2.0.12"],\
             ["vite", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:3.0.4"]\
           ],\
           "linkType": "SOFT"\
@@ -1859,6 +1860,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:18.2.0"],\
             ["react-router-dom", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:6.3.0"],\
+            ["typed.js", "npm:2.0.12"],\
             ["vite", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:3.0.4"]\
           ],\
           "linkType": "SOFT"\
@@ -2266,6 +2268,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/to-fast-properties-npm-2.0.0-0dc60cc481-be2de62fe5.zip/node_modules/to-fast-properties/",\
           "packageDependencies": [\
             ["to-fast-properties", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["typed.js", [\
+        ["npm:2.0.12", {\
+          "packageLocation": "./.yarn/cache/typed.js-npm-2.0.12-7618b42dfc-ea753bf8e0.zip/node_modules/typed.js/",\
+          "packageDependencies": [\
+            ["typed.js", "npm:2.0.12"]\
           ],\
           "linkType": "HARD"\
         }]\

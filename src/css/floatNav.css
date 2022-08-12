@@ -2,45 +2,47 @@
 FIXED NAV
 ***********************************/
 .float_nav {
-	position: fixed;
-	top: 15px;
-	left: calc(17% - 10vw);
-	width: 45vw;
+	position: absolute;
+	margin: 5px auto;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .float_nav_content {
+	position: relative;
 	margin: 0 auto;
 	padding: var(--tiny);
-	max-width: 500px;
-	/* width: calc(30vw + 2vw); */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	height: 100%;
 	z-index: 1;
+	padding-inline-end: -1rem;
 }
 
 .float_nav_style {
-	color: var(--white);
 	border-radius: var(--medium);
 }
 
 .float_nav_content li {
 	text-align: center;
-	cursor: pointer;
 	font-weight: 700;
 	font-size: clamp(0.8rem, 0.9rem, 1rem);
 	padding: var(--tiny) var(--small);
-	border-radius: var(--medium);
+	cursor: default;
 }
 
-.float_nav_content_style {
-	border: solid var(--pink) 2px;
-	background-color: var(--less-dark);
-}
-
-.float_nav_content li:hover {
+.float_nav_content li:hover:not(.float_nav_selected) {
 	background-color: var(--pink);
 	color: var(--white);
+	cursor: pointer;
+}
+
+.float_nav_content li:active:not(.float_nav_selected) {
+	background-color: var(--dark-pink);
+	transform: translateY(3px);
 }
 
 .float_nav_selected {
@@ -48,46 +50,35 @@ FIXED NAV
 	border: none;
 	color: var(--dark);
 	box-shadow: var(--clay-shadow);
+	border-radius: var(--medium);
 }
 
-@media screen and (max-width: 1050px) {
-	.float_nav_content li {
-		padding: var(--tiny) var(--tiny);
-	}
-
-	.float_nav {
-		top: 10px;
-		left: calc(15% - 10vw);
-		width: 48vw;
-	}
-}
-
-@media screen and (max-width: 845px) {
-	.float_nav {
-		top: 10px;
-		width: 43vw;
-		left: calc(17% - 10vw);
+@media screen and (max-width: 700px) {
+	.float_nav_content {
+		margin: 5px var(--decoration);
 	}
 	.float_nav_content li {
 		padding: var(--decoration) var(--tiny);
 	}
+}
+
+@media screen and (max-width: 550px) {
 	.float_nav_content {
-		display: grid;
-		row-gap: 5px;
-		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-		place-items: center;
-		padding: var(--decoration);
+		margin: 5px var(--tiny);
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		row-gap: 10px;
+		width: 80%;
+		white-space: nowrap;
+		padding: var(--tiny) var(--decoration);
 	}
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 400px) {
 	.float_nav {
-		top: 5px;
-		width: 50vw;
+		display: block;
+		margin: 15px;
 	}
-}
-
-@media screen and (max-width: 500px) {
 	.float_nav_content {
 		display: none;
 	}
