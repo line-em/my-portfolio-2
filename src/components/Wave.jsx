@@ -40,7 +40,7 @@ export default function Wave() {
 		</div>
 	);
 }
-
+// <!--  https://getwaves.io/ -->
 {
 	/* <svg
 				data-name="Layer 1"

@@ -324,6 +324,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emailjs/browser@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "@emailjs/browser@npm:3.6.2"
+  checksum: 605deffac6b09789a417e68093fc105906a1e75c046cda5de457ea00b0d8a75c1796f2c3ae17362c134669fb54f8a3731a78ca6fdac0bf8a78c2abcea2cb20c0
+  languageName: node
+  linkType: hard
+
 "@esbuild/linux-loong64@npm:0.14.53":
   version: 0.14.53
   resolution: "@esbuild/linux-loong64@npm:0.14.53"
@@ -1555,6 +1562,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "portfolio-2nd-version@workspace:."
   dependencies:
+    "@emailjs/browser": ^3.6.2
     "@types/react": ^18.0.15
     "@types/react-dom": ^18.0.6
     "@vitejs/plugin-react": ^2.0.0
