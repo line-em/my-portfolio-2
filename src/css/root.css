@@ -43,15 +43,20 @@
 }
 
 [data-theme="light"]:root {
-	--clay-shadow: 0 10px 50px var(--50-less-dark), inset 0 -8px 25px var(--grad-purple),
+	--clay-shadow: 0 10px 50px var(--50-less-white), inset 0 -8px 25px var(--grad-purple),
 		inset 0px 5px 20px var(--pink);
-	--less-pink: #e4c1ec;
-	--dark-pink: #a354b1;
-	--less-dark: #413959;
-	--white: #221927;
-	--50-less-white: #22192779;
-	--50-less-dark: #e5defa33;
-	--grad-purple: rgb(152, 103, 209);
+	--less-pink: #391342;
+	--dark-pink: #e96fff;
+	--less-dark: #f5d8fb;
+	/* --less-dark: #413959; */
+	--white: #130d16;
+	--dark: #beaac7;
+
+	--50-less-white: #413b446f;
+	--50-less-dark: #8d84a57b;
+	--75-less-dark: #dfcde9cc;
+
+	--grad-purple: rgb(79, 31, 138);
 }
 
 * {

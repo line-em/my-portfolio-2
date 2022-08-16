@@ -53,6 +53,10 @@ FIXED NAV
 	border-radius: var(--medium);
 }
 
+[data-theme="light"] .float_nav_selected {
+	color: var(--pink);
+}
+
 @media screen and (max-width: 700px) {
 	.float_nav_content {
 		margin: 5px var(--decoration);

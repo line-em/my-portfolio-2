@@ -32,7 +32,7 @@ const Home = () => {
 	return (
 		<section className="main_container col-2" role="note" data-aos="fade-up" id="about">
 			<article className="description_area">
-				<HandWaving size={68} color="var(--grad-purple)" />
+				<HandWaving size={68} color="var(--dark-pink)" />
 				<h1>Hey there! I'm Aline.</h1>
 				<h3>
 					An artist turned <strong>front-end developer</strong> and a{" "}

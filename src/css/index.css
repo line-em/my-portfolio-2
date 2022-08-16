@@ -12,6 +12,10 @@ body {
 	overflow-x: hidden;
 }
 
+[data-theme="light"] body {
+	color: var(--less-dark);
+}
+
 #root {
 	min-height: 100vh;
 	height: 100vh;
@@ -38,6 +42,10 @@ h1 {
 	background-size: 200%;
 	background-position: -200%;
 	animation: title-text-gradient 5s linear infinite;
+}
+
+[data-theme="light"] h1 {
+	background-image: radial-gradient(circle, var(--dark), var(--dark-pink));
 }
 
 h2 {
@@ -166,6 +174,10 @@ SVG WAVE
 	background-color: var(--less-dark);
 	background-size: 10px 10px;
 	z-index: -1;
+}
+
+[data-theme="light"] .custom-shape {
+	background-image: radial-gradient(#221126 0.2px, transparent 0.5px);
 }
 
 @media screen and (max-width: 600px) {
