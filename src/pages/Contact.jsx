@@ -1,6 +1,8 @@
-import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Envelope } from "phosphor-react";
+import React, { useRef } from "react";
+
+// emailjs.
 
 const Contact = () => {
 	const formRef = useRef(null);
@@ -22,7 +24,7 @@ const Contact = () => {
 		<section className="main_container" role="note" data-aos="fade-up" id="about">
 			<article className="description-page">
 				<article className="description_area">
-					<Envelope size={68} color="var(--grad-purple)" />
+					<Envelope size={68} color="var(--dark-pink)" />
 					<h3>Drop me a line!</h3>
 					<hr />
 
