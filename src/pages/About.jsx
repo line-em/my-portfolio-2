@@ -19,18 +19,21 @@ function About() {
 				<h2>About me</h2>
 				<p>
 					I'm Aline, a <strong>front-end developer</strong> currently based on Portugal,
-					building web applications using React. I like to deliver a good user
-					experiences, focusing on responsiveness and other things! As of now, I work as
-					an designer/illustrator, but I'm looking forward to a career change!
+					building web applications using React. I'm looking forward to be part of a team
+					that puts together creative solutions to all sorts of problems! I love
+					delivering good user interfaces and I'm ready to tackle more challenges!
+					{/* focusing on responsiveness and other things! As of now, I work as
+					an designer/illustrator, but I'm looking forward to a career change! */}
 				</p>
 				<p>
 					I'm a hard worker and eager to learn more. I'm looking for more knowledge and
-					for a chance to contribute in a real project!
+					for a chance to contribute in a real project, if you give me a chance.
 				</p>
 				<hr />
 			</article>
 			<article className="full-width">
 				<h2>Skills</h2>
+				{/* ADD REACT-ROUTER */}
 				<div className="skills">
 					{tools.map((tool) => (
 						<IconItem
