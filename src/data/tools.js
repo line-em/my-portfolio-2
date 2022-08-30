@@ -26,5 +26,12 @@ export default [
 		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
 		altText: "React icon",
 		text: "React"
+	},
+	{
+		id: 5,
+		abbr: "React Router",
+		src: "",
+		altText: "React Router icon",
+		text: "React Router"
 	}
 ];
