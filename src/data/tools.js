@@ -34,4 +34,5 @@ export default [
 		altText: "React Router icon",
 		text: "React Router"
 	}
+	// TODO: Find icon
 ];
