@@ -3,11 +3,11 @@ fieldset {
 }
 
 fieldset:invalid ~ fieldset {
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 form:invalid button {
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 input,
