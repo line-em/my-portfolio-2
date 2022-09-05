@@ -1,5 +1,5 @@
 ::selection {
-	background: var(--grad-purple);
+	background: var(--pink);
 	color: var(--white);
 }
 
@@ -236,4 +236,19 @@ UTILS
 .float {
 	animation: float 5s ease-in-out infinite;
 	filter: drop-shadow(0 0 50px var(--grad-purple));
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.text-white {
+	color: var(--white);
+}
+
+.extra-padding-x {
+	padding-inline-start: var(--medium);
+	padding-inline-end: var(--medium);
 }

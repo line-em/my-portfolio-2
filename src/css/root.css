@@ -18,6 +18,7 @@
 		inset 0px 5px 20px var(--white);
 
 	/*base colors*/
+	--red: #ac454e;
 	--pink: #b97dc6;
 	--less-pink: #d5a0e1;
 	--dark-pink: #70257d;
@@ -33,6 +34,7 @@
 	--50-less-dark: #22192779;
 	--75-less-dark: #221927cc;
 	--50-less-white: #f9f8fc33;
+	--25-less-white: #f9f8fcb7;
 
 	/*swirl*/
 	--s-height: 170px;
@@ -50,9 +52,10 @@
 	--less-dark: #f5d8fb;
 	/* --less-dark: #413959; */
 	--white: #130d16;
-	--dark: #beaac7;
+	--dark: #cfbdd7;
 
-	--50-less-white: #413b446f;
+	--25-less-white: #392f3ed8;
+	--50-less-white: #392f3e6f;
 	--50-less-dark: #8d84a57b;
 	--75-less-dark: #dfcde9cc;
 

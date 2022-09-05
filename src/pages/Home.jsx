@@ -40,7 +40,7 @@ const Home = () => {
 				</h3>
 				<hr />
 				<p>
-					Want to know more? <Link to="/about">Check out my profile!</Link> 🌈
+					Get to know me by <Link to="/about">checking out my profile!</Link> 😊
 				</p>
 			</article>
 			<img src={profileImage} alt="" style={{ width: "450px" }} className="float" />

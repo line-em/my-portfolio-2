@@ -1,0 +1,56 @@
+fieldset {
+	border: none;
+}
+
+fieldset:invalid ~ fieldset {
+	opacity: 0.5;
+}
+
+form:invalid button {
+	opacity: 0.5;
+}
+
+input,
+textarea {
+	display: block;
+	padding: var(--tiny);
+	border-radius: var(--tiny);
+	margin: var(--small) 0;
+	width: 30vw;
+	border: none;
+	background-color: var(--25-less-white);
+	color: var(--dark);
+}
+
+label {
+	cursor: pointer;
+	font-weight: 700;
+	color: var(--dark);
+}
+
+textarea {
+	height: 15vh;
+}
+
+:is(input, textarea):not(:focus):not(:placeholder-shown):invalid {
+	outline: var(--red) 2px solid;
+}
+
+:is(input, textarea):focus {
+	outline: var(--dark-pink) 2px solid;
+	background-color: var(--white);
+	box-shadow: var(--shadow);
+}
+
+.error-message {
+	display: none;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
+	display: block;
+	margin-block: var(--base) var(--small);
+	background-color: var(--red);
+	color: var(--white);
+	border-radius: var(--tiny);
+	text-align: center;
+}
