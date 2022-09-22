@@ -3,11 +3,11 @@ fieldset {
 }
 
 fieldset:invalid ~ fieldset {
-	opacity: 0.3;
+	opacity: 0.35;
 }
 
 form:invalid button {
-	opacity: 0.3;
+	opacity: 0.35;
 }
 
 input,
@@ -18,7 +18,7 @@ textarea {
 	margin: var(--small) 0;
 	width: 30vw;
 	border: none;
-	background-color: var(--25-less-white);
+	background-color: var(--white);
 	color: var(--dark);
 }
 
@@ -53,4 +53,11 @@ input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
 	color: var(--white);
 	border-radius: var(--tiny);
 	text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+	input,
+	textarea {
+		width: 80vw;
+	}
 }
