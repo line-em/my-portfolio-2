@@ -1,10 +1,17 @@
 import React from "react";
 
-export default function IconItem({ abbr, src, text, altText }) {
+export default function IconItem({ abbr, src, text, altText, txtcolor, bgcolor }) {
+	const skillStyle = {
+		color: txtcolor,
+		backgroundColor: bgcolor
+	};
+
 	return (
-		<abbr title={abbr} className="box_container">
-			<img src={src} loading="lazy" alt={altText} />
-			<figcaption>{text}</figcaption>
-		</abbr>
+		<div className="skills_item">
+			<img src={src} loading="lazy" alt={altText} style={{ mixBlendMode: "multiply" }} />
+			<abbr title={abbr} style={skillStyle}>
+				{text}
+			</abbr>
+		</div>
 	);
 }

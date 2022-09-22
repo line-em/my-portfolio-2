@@ -4,35 +4,71 @@ export default [
 		abbr: "HTML - HyperText Markup Language",
 		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
 		altText: "HTML5 icon",
-		text: "HTML5"
+		text: "HTML5",
+		txtcolor: "#f9f8fc",
+		bgcolor: "orangered"
 	},
 	{
 		id: 2,
 		abbr: "CSS - Cascading Style Sheets",
 		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
 		altText: "CSS icon",
-		text: "CSS"
+		text: "CSS",
+		bgcolor: "#1570b2",
+		txtcolor: "#f9f8fc"
 	},
 	{
 		id: 3,
 		abbr: "JavaScript",
 		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
 		altText: "JavaScript icon",
-		text: "JavaScript"
+		text: "JavaScript",
+		txtcolor: "#221126",
+		bgcolor: "#f0ca4f"
 	},
 	{
 		id: 4,
 		abbr: "React",
 		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
 		altText: "React icon",
-		text: "React"
+		text: "React",
+		bgcolor: "#61dafb",
+		txtcolor: "#221126"
 	},
 	{
 		id: 5,
-		abbr: "React Router",
-		src: "",
-		altText: "React Router icon",
-		text: "React Router"
+		abbr: "Yarn / NPM",
+		src: "../src/misc/icon/yarn.svg",
+		altText: "Yarn Icon",
+		text: "Yarn & Npm",
+		bgcolor: "#2c8ebb",
+		txtcolor: "#f9f8fc"
+	},
+	{
+		id: 6,
+		abbr: "Git / Github",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+		altText: "Git Icon",
+		text: "Git & Github",
+		bgcolor: "#f34f29",
+		txtcolor: "#f9f8fc"
+	},
+	{
+		id: 7,
+		abbr: "REST APIs",
+		src: "../src/misc/icon/insomnia.svg",
+		altText: "Insomnia Icon",
+		text: "REST APIs",
+		bgcolor: "#3f00bd",
+		txtcolor: "#f9f8fc"
+	},
+	{
+		id: 8,
+		abbr: "Windows",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg",
+		altText: "Windows Icon",
+		text: "Windows",
+		bgcolor: "#00adef",
+		txtcolor: "#f9f8fc"
 	}
-	// TODO: Find icon
 ];

@@ -39,12 +39,30 @@ article > svg {
 	max-width: 100%;
 }
 
-.box_container {
-	background: transparent;
+.skills {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: var(--small) var(--medium);
+	margin: var(--base) auto;
+}
+
+.skills_item {
 	width: 100%;
-	padding: var(--small);
-	border-radius: var(--medium);
-	box-shadow: var(--clay-shadow);
+	display: flex;
+	text-align: center;
+}
+
+.skills_item img {
+	max-width: var(--medium);
+	margin-inline-end: var(--tiny);
+}
+
+.skills_item abbr {
+	margin: auto 0;
+	background-color: var(--50-less-white);
+	padding: var(--decoration) var(--tiny);
+	border-radius: var(--small);
+	box-shadow: var(--shadow);
 }
 
 @media screen and (max-width: 700px) {

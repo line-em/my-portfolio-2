@@ -128,7 +128,7 @@ a:not(.float_nav_content a):hover:after {
 
 strong {
 	font-weight: 700;
-	color: var(--25-less-white);
+	color: var(--dark-pink);
 }
 
 [data-theme="light"] strong {
@@ -143,24 +143,10 @@ strong {
 abbr {
 	text-decoration: none;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	font: 700 var(--small) var(--sans);
+	font: 700 0.8rem var(--sans);
 	color: var(--dark-pink);
-}
-
-.skills {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: var(--small);
-	margin: var(--medium) auto;
-}
-
-.skills * > * {
-	max-width: 50px;
-	width: 50px;
-	height: auto;
 }
 
 .full-width {

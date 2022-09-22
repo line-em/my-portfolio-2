@@ -7,7 +7,7 @@ function About() {
 	const { width: windowWidth } = useWindowDimensions();
 	return (
 		<section
-			className={`main_container main_large ${windowWidth > 900 ? "col-3" : "col-2"}`}
+			className={`main_container main_large ${windowWidth > 1000 ? "col-3" : "col-2"}`}
 			role="note"
 			id="about"
 		>
@@ -28,22 +28,33 @@ function About() {
 				<hr />
 			</article>
 			<article>
-				<h2>Skills</h2>
-				{/* ADD REACT-ROUTER */}
+				<h2>Tech Skills</h2>
 				<div className="skills">
 					{tools.map((tool) => (
 						<IconItem
+							key={tool.id}
 							abbr={tool.abbr}
 							src={tool.src}
 							altText={tool.altText}
 							text={tool.text}
+							bgcolor={tool.bgcolor}
+							txtcolor={tool.txtcolor}
 						/>
 					))}
 				</div>
-				<h2>Tooling</h2>
-				<p>Git / Github</p>
-				<p>Yarn / Vite</p>
-				<p>Insomnia (API)</p>
+
+				<p>
+					I've been studying <strong>testing</strong>, and I've also worked with{" "}
+					<strong>Tailwind</strong>, <strong>Firebase</strong>, and{" "}
+					<strong>React-Router</strong>.
+				</p>
+				<hr />
+				<h2>Design Skills</h2>
+				<p>
+					As a Designer, I've worked with the Adobe Suite (Photoshop, Illustrator,
+					InDesign, After Effects and Premiere).
+				</p>
+				<hr />
 			</article>
 
 			<article className="fun">
@@ -57,14 +68,25 @@ function About() {
 					🎮 I love books, games and animation. I also already worked with games in the
 					past!
 				</p>
-				<p>🐱 I love spending time with my cat, Leia. She's one talkative kitten!</p>
+				<p>
+					🐱 I love spending time with my cat, Leia, the rebel princess 👑. She's one
+					talkative kitten!
+				</p>
 
 				<hr />
 				<h3>Socials</h3>
-				<ul>
-					<li>Github</li>
-					<li>LinkedIn</li>
-				</ul>
+
+				<a href="https://github.com/line-em" target="_blank" rel="noopener noreferrer">
+					Github
+				</a>
+				<br />
+				<a
+					href="https://www.linkedin.com/in/alineemily/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					LinkedIn
+				</a>
 			</article>
 		</section>
 	);
