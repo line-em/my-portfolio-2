@@ -5,7 +5,7 @@
 	height: 70vh;
 	display: grid;
 	place-items: center;
-	gap: 25px;
+	gap: 55px;
 	margin: auto;
 	z-index: 10;
 }
@@ -29,6 +29,10 @@
 
 article > svg {
 	flex: none;
+}
+
+article:last-of-type {
+	margin-block-end: var(--large);
 }
 
 .description_area {

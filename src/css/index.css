@@ -75,7 +75,7 @@ p + * {
 
 hr {
 	margin: var(--medium) auto;
-	width: calc(25ch + 10%);
+	width: calc(20ch + 10%);
 	border: none;
 	border-top: var(--decoration) solid var(--white);
 }
@@ -197,8 +197,8 @@ buttons
 ***********************************/
 
 .hamburger {
-	position: fixed;
-	right: 0;
+	position: absolute;
+	right: 10px;
 	margin-inline-end: var(--small);
 }
 
@@ -235,6 +235,14 @@ UTILS
 	display: flex;
 	justify-content: center;
 	margin: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
 }
 
 .text-white {

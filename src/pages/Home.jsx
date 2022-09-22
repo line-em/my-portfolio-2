@@ -32,7 +32,7 @@ const Home = () => {
 	}, []);
 
 	return (
-		<section className="main_container col-2" role="note" id="about">
+		<section className="main_container col-2 text-center" role="note" id="about">
 			<img
 				src={profileImage}
 				alt=""

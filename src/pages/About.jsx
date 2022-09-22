@@ -2,12 +2,16 @@ import React from "react";
 import IconItem from "../components/IconItem";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import tools from "../data/tools";
+import design from "../data/design";
+import { Link } from "react-router-dom";
 
 function About() {
 	const { width: windowWidth } = useWindowDimensions();
 	return (
 		<section
-			className={`main_container main_large ${windowWidth > 1000 ? "col-3" : "col-2"}`}
+			className={`main_container main_large text-justify ${
+				windowWidth > 1000 ? "col-3" : "col-2"
+			}`}
 			role="note"
 			id="about"
 		>
@@ -15,15 +19,20 @@ function About() {
 				<h2>About me</h2>
 				<p>
 					I'm Aline, a <strong>front-end developer</strong> currently based on Portugal,
-					building web applications using React. I'm looking forward to be part of a team
-					that puts together creative solutions to all sorts of problems! I love
-					delivering good user interfaces and I'm ready to tackle more challenges!
-					{/* focusing on responsiveness and other things! As of now, I work as
-					an designer/illustrator, but I'm looking forward to a career change! */}
+					building web applications using React and looking for a{" "}
+					<strong>career change</strong>. I love delivering good and{" "}
+					<strong>responsive user interfaces</strong> and I'm ready to tackle more
+					challenges! <strong>I enjoy CSS</strong>, and it's one of the things I'm most
+					excited to work with and to get better at. I also want to learn new tech related
+					to it, such as Sass!
 				</p>
 				<p>
-					I'm a hard worker and eager to learn more. I'm looking for more knowledge and
-					for a chance to contribute in a real project, if you give me a chance.
+					I'm a hard worker and eager to learn more. If you want to get in touch with me,
+					please <Link to="/contact">come over here!</Link> You can also reach out via my
+					socials.
+				</p>
+				<p>
+					Want to check <Link to="/projects">some of my projects?</Link>
 				</p>
 				<hr />
 			</article>
@@ -50,10 +59,19 @@ function About() {
 				</p>
 				<hr />
 				<h2>Design Skills</h2>
-				<p>
-					As a Designer, I've worked with the Adobe Suite (Photoshop, Illustrator,
-					InDesign, After Effects and Premiere).
-				</p>
+				<div className="skills">
+					{design.map((tool) => (
+						<IconItem
+							key={tool.id}
+							abbr={tool.abbr}
+							src={tool.src}
+							altText={tool.altText}
+							text={tool.text}
+							bgcolor={tool.bgcolor}
+							txtcolor={tool.txtcolor}
+						/>
+					))}
+				</div>
 				<hr />
 			</article>
 
