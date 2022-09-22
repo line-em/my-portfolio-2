@@ -24,7 +24,7 @@
 
 .main_container > article {
 	height: 65vh;
-	/* overflow: scroll; */
+	width: 100%;
 }
 
 .description_area {
@@ -43,19 +43,15 @@
 	border-radius: var(--medium);
 	box-shadow: var(--clay-shadow);
 }
-/* }
-
-@media screen and (max-width: 1000px) {
-	.main_container {
-		grid-template-columns: 1fr 1fr;
-		overflow: scroll;
-	}
-}
 
 @media screen and (max-width: 600px) {
 	.main_container {
 		grid-template-columns: 1fr;
-		width: 80%;
-		margin: var(--large) auto;
+		width: 85%;
+		gap: 10px;
 	}
-} */
+
+	.main_container > article {
+		height: 100%;
+	}
+}

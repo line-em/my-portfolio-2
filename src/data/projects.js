@@ -11,10 +11,10 @@ export default [
 	},
 	{
 		id: "2",
-		title: "Books E-commerce",
+		title: "Cat Pics E-commerce",
 		description:
 			"I decided to build an experimental e-commerce website, to be able to study some new React Hooks, such as useContext. This was a tough cookie! After making several projects using useState, and needing to both lift state up and drill it down, it was time to finally use useContext. I can see how important and useful this is, specially for a bigger project. I also used React Router Dom and had fun with CSS Grid.",
-		tech: ["React", "React Router Dom"],
+		tech: ["React", "React Router Dom", "The Cat API", "CSS Grid", "CSS Modal"],
 		image: "../../../public/projects/ecommerce.png",
 		github: "ss",
 		live: "ss"

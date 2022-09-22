@@ -1,5 +1,6 @@
 import React from "react";
 import IconItem from "../components/IconItem";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 import tools from "../data/tools";
 
 // import AOS from "aos";
@@ -8,9 +9,11 @@ import tools from "../data/tools";
 
 function About() {
 	// AOS.init();
+
+	const { width: windowWidth } = useWindowDimensions();
 	return (
 		<section
-			className="main_container col-3 main_large"
+			className={`main_container main_large ${windowWidth > 900 ? "col-3" : "col-2"}`}
 			role="note"
 			data-aos="fade-up"
 			id="about"
@@ -31,7 +34,7 @@ function About() {
 				</p>
 				<hr />
 			</article>
-			<article className="full-width">
+			<article>
 				<h2>Skills</h2>
 				{/* ADD REACT-ROUTER */}
 				<div className="skills">
