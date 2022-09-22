@@ -13,13 +13,8 @@ const Nav = () => {
 	}, [isDarkMode]);
 
 	const navBar = tabs.map((tab) => (
-		<Link to={`/${tab}`}>
-			<NavItem
-				currentTab={currentTab}
-				key={`${tab}+${currentTab}`}
-				tab={tab}
-				setCurrentTab={() => setCurrentTab(tab)}
-			/>
+		<Link to={`/${tab}`} key={`${tab}+${Math.floor(Math.random() * 10)}`}>
+			<NavItem currentTab={currentTab} tab={tab} setCurrentTab={() => setCurrentTab(tab)} />
 		</Link>
 	));
 

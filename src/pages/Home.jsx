@@ -1,7 +1,8 @@
 import React from "react";
 import { HandWaving } from "phosphor-react";
 import { Link } from "react-router-dom";
-import profileImage from "../misc/profile_arcane_cut.png";
+import profileImage from "../misc/profile_photo2_cut.png";
+// import profileImage from "../misc/profile_arcane_cut.png";
 import Typed from "typed.js";
 
 const Home = () => {
@@ -32,7 +33,7 @@ const Home = () => {
 	return (
 		<section className="main_container col-2" role="note" data-aos="fade-up" id="about">
 			<article className="description_area">
-				<HandWaving size={68} color="var(--dark-pink)" />
+				<HandWaving size={68} color="var(--dark-pink)" loading="lazy" />
 				<h1>Hey there! I'm Aline.</h1>
 				<h3>
 					An artist turned <strong>front-end developer</strong> and a{" "}
@@ -43,7 +44,13 @@ const Home = () => {
 					Get to know me by <Link to="/about">checking out my profile!</Link> 😊
 				</p>
 			</article>
-			<img src={profileImage} alt="" style={{ width: "450px" }} className="float" />
+			<img
+				src={profileImage}
+				alt=""
+				style={{ width: "450px" }}
+				className="float"
+				loading="lazy"
+			/>
 		</section>
 	);
 };
