@@ -100,7 +100,6 @@ function About() {
 				<a href="https://github.com/line-em" target="_blank" rel="noopener noreferrer">
 					Github
 				</a>
-				<br />
 				<a
 					href="https://www.linkedin.com/in/alineemily/"
 					target="_blank"

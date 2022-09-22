@@ -1,9 +1,11 @@
+/* Base containers and columns */
+
 .main_container {
+	display: grid;
 	grid-row: 2;
 	width: 90%;
 	max-width: 100ch;
 	height: 70vh;
-	display: grid;
 	place-items: center;
 	gap: 55px;
 	margin: auto;
@@ -14,13 +16,32 @@
 	max-width: 150ch;
 }
 
-.col-3 {
-	grid-template-columns: 1fr 1fr 1fr;
+.project_container {
+	display: grid;
+	gap: 55px;
 }
 
 .col-2 {
 	grid-template-columns: 1fr 1fr;
 }
+
+.col-3 {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.description_area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+}
+
+/* Higher specificity details */
 
 .main_container > article {
 	height: 65vh;
@@ -31,17 +52,65 @@ article > svg {
 	flex: none;
 }
 
-article:last-of-type {
+section article:last-of-type {
 	margin-block-end: var(--large);
 }
 
-.description_area {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	max-width: 100%;
+/* projects */
+
+.project_box {
+	border-radius: var(--base);
+	background-color: var(--50-less-white);
+	box-shadow: var(--clay-shadow);
 }
+
+.project_details {
+	padding: 0 var(--base) var(--base);
+}
+
+.project_image {
+	border-radius: var(--base) var(--base) 0 0;
+	overflow: hidden;
+}
+
+.project_image img {
+	transform: scale(1);
+	height: 210px;
+}
+
+.project_image img:hover {
+	transform: scale(1.3);
+}
+.project_tech {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin: var(--small) 0 var(--tiny);
+}
+
+.project_badge {
+	background-color: var(--dark-pink);
+	font: 0.8rem var(--sans);
+	color: var(--white);
+	padding: var(--decoration) var(--tiny);
+	border-radius: var(--tiny);
+}
+
+.project_badge:nth-of-type(2) {
+	background-color: var(--grad-purple);
+}
+
+.project_badge:nth-of-type(3) {
+	background-color: var(--red);
+}
+
+.project_badge:nth-of-type(4) {
+	background-color: var(--pink);
+}
+
+/* skills container */
 
 .skills {
 	display: grid;
@@ -68,6 +137,8 @@ article:last-of-type {
 	border-radius: var(--small);
 	box-shadow: var(--shadow);
 }
+
+/* media queries */
 
 @media screen and (max-width: 700px) {
 	.main_container {

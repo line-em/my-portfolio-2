@@ -54,6 +54,15 @@ h2 {
 	text-decoration: underline var(--white) var(--decoration);
 }
 
+h4 {
+	width: 100%;
+	background-color: var(--50-less-dark);
+	padding: var(--tiny);
+	color: var(--white);
+	margin: 0;
+	letter-spacing: 1px;
+}
+
 :is(h3, .typed_text) {
 	font-size: clamp(0.9rem, 0.9vw + 1rem, 1.8rem);
 	font-style: italic;
@@ -78,6 +87,10 @@ hr {
 	width: calc(20ch + 10%);
 	border: none;
 	border-top: var(--decoration) solid var(--white);
+}
+
+.hr_tiny {
+	margin: var(--tiny) auto;
 }
 
 a {
@@ -252,4 +265,8 @@ UTILS
 .extra-padding-x {
 	padding-inline-start: var(--medium);
 	padding-inline-end: var(--medium);
+}
+
+.neg-top {
+	margin-block-start: -2rem;
 }

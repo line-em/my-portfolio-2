@@ -36,7 +36,7 @@ const Home = () => {
 			<img
 				src={profileImage}
 				alt=""
-				style={{ width: "450px" }}
+				style={windowWidth > 900 ? { width: "550px" } : { width: "450px" }}
 				className="float"
 				loading="lazy"
 			/>
