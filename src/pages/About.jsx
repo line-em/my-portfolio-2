@@ -6,6 +6,9 @@ import design from "../data/design";
 import { Link } from "react-router-dom";
 
 function About() {
+	// FIXME: SVG with low contrast.
+	// FIXME: Check grammar and styles.
+
 	const { width: windowWidth } = useWindowDimensions();
 	return (
 		<section
