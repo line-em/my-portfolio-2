@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
 	return (
-		<section className="main_container" role="note" data-aos="fade-up" id="about">
+		<section className="main_container" role="note" id="about">
 			<article className="description-page">
 				<h1>Hey there!👋🏽</h1>
 				{/* add loading="lazy" */}

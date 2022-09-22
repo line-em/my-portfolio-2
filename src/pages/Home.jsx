@@ -1,24 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HandWaving } from "phosphor-react";
 import { Link } from "react-router-dom";
 import profileImage from "../misc/profile_photo2_cut.png";
-// import profileImage from "../misc/profile_arcane_cut.png";
 import Typed from "typed.js";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 const Home = () => {
+	const { width: windowWidth } = useWindowDimensions();
 	const adjEl = React.useRef(null);
 	const typed = React.useRef(null);
-	React.useEffect(() => {
+
+	useEffect(() => {
 		const options = {
 			strings: [
 				"tea lover 🫖",
 				"cat mom 🐱",
 				"bookworm 📚",
 				"creative 🎨",
-				// "digital artist 🎨",
 				"sci-fi and fantasy fan 🚀",
 				"video game player 🎮"
-				// "writing enthusiast 📝"
 			],
 			typeSpeed: 60,
 			backSpeed: 40,
@@ -30,20 +30,9 @@ const Home = () => {
 			typed.current.destroy();
 		};
 	}, []);
+
 	return (
-		<section className="main_container col-2" role="note" data-aos="fade-up" id="about">
-			<article className="description_area">
-				<HandWaving size={68} color="var(--dark-pink)" loading="lazy" />
-				<h1>Hey there! I'm Aline.</h1>
-				<h3>
-					An artist turned <strong>front-end developer</strong> and a{" "}
-					<span className="typed_text" ref={adjEl}></span>
-				</h3>
-				<hr />
-				<p>
-					Get to know me by <Link to="/about">checking out my profile!</Link> 😊
-				</p>
-			</article>
+		<section className="main_container col-2" role="note" id="about">
 			<img
 				src={profileImage}
 				alt=""
@@ -51,6 +40,22 @@ const Home = () => {
 				className="float"
 				loading="lazy"
 			/>
+			<article className="description_area">
+				<HandWaving
+					size={windowWidth > 900 ? 68 : 0}
+					color="var(--dark-pink)"
+					loading="lazy"
+				/>
+				<h1>Hey there! I'm Aline.</h1>
+				<h3>
+					An artist turned front-end developer and a{" "}
+					<span className="typed_text" ref={adjEl}></span>
+				</h3>
+				<hr />
+				<p>
+					Get to know me by <Link to="/about">checking out my profile!</Link>
+				</p>
+			</article>
 		</section>
 	);
 };

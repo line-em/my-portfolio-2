@@ -2,16 +2,14 @@ import emailjs from "@emailjs/browser";
 import { Envelope } from "phosphor-react";
 import React, { useRef } from "react";
 import { useToggle } from "../hooks/useToggle";
-
-// emailjs.
-// TODO: CREATE FORM
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 const Contact = () => {
 	const formRef = useRef(null);
 	const [sent, isSent] = useToggle(false);
+	const { width: windowWidth } = useWindowDimensions();
 
 	// FIXME: Add dotenv to protect the key. At https://dashboard.emailjs.com/admin/templates/yn0vzya, enable more security stuff.
-	// Form validation and styles.
 	const sendEmail = (e) => {
 		e.preventDefault();
 		emailjs
@@ -27,9 +25,9 @@ const Contact = () => {
 	};
 
 	return (
-		<section className="main_container" role="note" data-aos="fade-up" id="about">
+		<section className="main_container" role="note" id="about">
 			<article className="description_area">
-				<Envelope size={68} color="var(--dark-pink)" />
+				<Envelope size={windowWidth > 900 ? 68 : 50} color="var(--dark-pink)" />
 				<h3>Drop me a line!</h3>
 				<hr />
 

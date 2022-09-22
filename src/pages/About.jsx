@@ -3,19 +3,12 @@ import IconItem from "../components/IconItem";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import tools from "../data/tools";
 
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// FIXME: Should I install AOS?
-
 function About() {
-	// AOS.init();
-
 	const { width: windowWidth } = useWindowDimensions();
 	return (
 		<section
 			className={`main_container main_large ${windowWidth > 900 ? "col-3" : "col-2"}`}
 			role="note"
-			data-aos="fade-up"
 			id="about"
 		>
 			<article>

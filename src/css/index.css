@@ -36,7 +36,7 @@ BASE STYLES
 h1 {
 	font-size: clamp(1.5rem, 2.1vw + 1rem, 3rem);
 	text-decoration: underline var(--white) var(--decoration);
-	background-image: radial-gradient(circle, var(--grad-purple), var(--dark-pink));
+	background-image: radial-gradient(circle, var(--dark-pink), var(--grad-purple));
 	color: transparent;
 	background-clip: text;
 	background-size: 200%;
@@ -82,7 +82,7 @@ hr {
 
 a {
 	color: var(--white);
-	padding: var(--decoration) var(--tiny);
+	padding: var(--decoration);
 	text-decoration: none;
 }
 
@@ -91,12 +91,15 @@ a {
 }
 
 a:not(.float_nav_content a) {
-	color: var(--dark-pink);
-
+	color: var(--white);
 	font-weight: 700;
 	text-decoration: var(--grad-purple) var(--decoration) underline solid;
 	display: inline-block;
 	position: relative;
+}
+
+[data-theme="light"] a:not(.float_nav_content a) {
+	color: var(--dark-pink);
 }
 
 a:not(.float_nav_content a):hover {
@@ -125,7 +128,10 @@ a:not(.float_nav_content a):hover:after {
 
 strong {
 	font-weight: 700;
-	text-decoration: underline var(--white) var(--decoration);
+	color: var(--25-less-white);
+}
+
+[data-theme="light"] strong {
 	color: var(--dark-pink);
 }
 
