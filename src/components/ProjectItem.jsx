@@ -18,30 +18,18 @@ const ProjectItem = ({ image, title, live, github, tech, description, id }) => {
 	};
 
 	return (
-		<section className="project_box tilt" key={id}>
-			{typeof image !== "string" ? (
-				<>
-					<div className="project_arrows">
-						<ArrowFatLeft
-							size={38}
-							weight="fill"
-							onClick={() => cycleImages(imageIndex)}
-						/>
-						<ArrowFatRight
-							size={38}
-							weight="fill"
-							onClick={() => cycleImages(imageIndex)}
-						/>
-					</div>
-					<div className="project_image">
-						<img src={image[imageIndex]} alt={title} loading="lazy" />
-					</div>
-				</>
-			) : (
-				<div className="project_image">
-					<img src={image} alt={title} loading="lazy" />
+		<section className="project_box" key={id}>
+			<div className="project_image">
+				<div className="project_arrows">
+					<ArrowFatLeft size={28} weight="fill" onClick={() => cycleImages(imageIndex)} />
+					<ArrowFatRight
+						size={28}
+						weight="fill"
+						onClick={() => cycleImages(imageIndex)}
+					/>
 				</div>
-			)}
+				<img src={image[imageIndex]} alt={title} loading="lazy" />
+			</div>
 			<h4>
 				{title} -{" "}
 				<a href={live} target="_blank" rel="noopener noreferrer">
@@ -52,6 +40,7 @@ const ProjectItem = ({ image, title, live, github, tech, description, id }) => {
 					GitHub
 				</a>
 			</h4>
+
 			<section className="project_tech ">
 				{tech.map((tech) => (
 					<span className="project_badge ">{tech}</span>

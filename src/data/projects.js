@@ -15,7 +15,11 @@ export default [
 		description:
 			"This is a mock e-commerce website using various React hooks, such as useContext. It generates various Cat Prints with random titles and prices, with the fun Cat API! I made a CSS Modal, used the reliable React Router Dom and had fun with CSS Grid again.",
 		tech: ["React", "React PropTypes", "React Router Dom", "The Cat API", "CSS Grid", "Modal"],
-		image: "../src/misc/project/catpics1.png",
+		image: [
+			"../src/misc/project/catpics1.png",
+			"../src/misc/project/catpics2.png",
+			"../src/misc/project/catpics3.png"
+		],
 		github: "https://github.com/line-em/catpics-e-commerce",
 		live: "https://line-em.github.io/catpics-e-commerce/"
 	},

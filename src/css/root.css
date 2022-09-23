@@ -62,6 +62,6 @@
 	--grad-purple: rgb(79, 31, 138);
 }
 
-* {
+/* * {
 	transition: var(--base-transition);
-}
+} */

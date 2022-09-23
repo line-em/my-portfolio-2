@@ -7,7 +7,7 @@
 	max-width: 100ch;
 	height: 70vh;
 	place-items: center;
-	gap: 55px;
+	gap: 10px 55px;
 	margin: auto;
 	z-index: 10;
 }
