@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function IconItem({ abbr, src, text, altText, txtcolor, bgcolor, animationClass }) {
+const IconItem = ({ abbr, src, text, altText, txtcolor, bgcolor, animationClass }) => {
 	const skillStyle = {
 		color: txtcolor,
 		backgroundColor: bgcolor
@@ -20,4 +18,6 @@ export default function IconItem({ abbr, src, text, altText, txtcolor, bgcolor, 
 			</abbr>
 		</div>
 	);
-}
+};
+
+export default IconItem;
