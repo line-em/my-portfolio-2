@@ -4,10 +4,12 @@ import useWindowDimensions from "../hooks/useWindowDimensions";
 import tools from "../data/tools";
 import design from "../data/design";
 import { Link } from "react-router-dom";
+import { LinkedinLogo, GithubLogo } from "phosphor-react";
 
 function About() {
 	// FIXME: SVG with low contrast.
 	// FIXME: Check grammar and styles.
+	// FIXME: Flex on socials
 
 	const { width: windowWidth } = useWindowDimensions();
 	return (
@@ -51,6 +53,7 @@ function About() {
 							text={tool.text}
 							bgcolor={tool.bgcolor}
 							txtcolor={tool.txtcolor}
+							animationClass={tool.id % 2 ? "tiny-float" : "tiny-float delay-1s"}
 						/>
 					))}
 				</div>
@@ -72,6 +75,7 @@ function About() {
 							text={tool.text}
 							bgcolor={tool.bgcolor}
 							txtcolor={tool.txtcolor}
+							animationClass={tool.id % 2 ? "tiny-float" : "tiny-float delay-1s"}
 						/>
 					))}
 				</div>
@@ -96,10 +100,12 @@ function About() {
 
 				<hr />
 				<h3>Socials</h3>
-
+				<GithubLogo color="var(--dark-pink)" size="24" weight="fill" />
 				<a href="https://github.com/line-em" target="_blank" rel="noopener noreferrer">
 					Github
 				</a>
+				<br />
+				<LinkedinLogo color="var(--dark-pink)" size="24" weight="fill" />
 				<a
 					href="https://www.linkedin.com/in/alineemily/"
 					target="_blank"

@@ -25,9 +25,13 @@ const Contact = () => {
 	};
 
 	return (
-		<section className="main_container" role="note" id="about">
+		<section className="main_container" role="note" id="contact">
 			<article className="description_area">
-				<Envelope size={windowWidth > 900 ? 68 : 50} color="var(--dark-pink)" />
+				<Envelope
+					size={windowWidth > 900 ? 68 : 50}
+					color="var(--dark-pink)"
+					className="wave-invert"
+				/>
 				<h3>Drop me a line!</h3>
 				<hr />
 

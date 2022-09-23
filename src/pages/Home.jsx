@@ -31,8 +31,9 @@ const Home = () => {
 		};
 	}, []);
 
+	// FIXME: Halftone em var(--dark) embaixo
 	return (
-		<section className="main_container col-2 text-center" role="note" id="about">
+		<section className="main_container col-2 text-center" role="note" id="home">
 			<img
 				src={profileImage}
 				alt=""
@@ -44,7 +45,7 @@ const Home = () => {
 				<HandWaving
 					size={windowWidth > 900 ? 68 : 0}
 					color="var(--dark-pink)"
-					loading="lazy"
+					className="wave"
 				/>
 				<h1>Hey there! I'm Aline.</h1>
 				<h3>

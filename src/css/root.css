@@ -19,10 +19,10 @@
 
 	/*base colors*/
 	--red: #ac454e;
-	--pink: #b97dc6;
 	--less-pink: #dfb2e9;
-	/* --less-pink: #d5a0e1; */
-	--dark-pink: #70257d;
+	--pink: #b97dc6;
+	--bright-pink: #c719aa;
+	--dark-pink: #740b6a;
 	--dark: #14071a;
 	--less-dark: #221927;
 	--white: #f9f8fc;
@@ -38,7 +38,7 @@
 	--25-less-white: #f9f8fcb7;
 
 	/*swirl*/
-	--s-height: 170px;
+	--s-height: 160px;
 	--s-mar-top: -20px;
 
 	/*transition*/

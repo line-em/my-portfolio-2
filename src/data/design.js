@@ -43,14 +43,5 @@ export default [
 		text: "Indesign",
 		bgcolor: "#2c8ebb",
 		txtcolor: "#f9f8fc"
-	},
-	{
-		id: 6,
-		abbr: "Git / Github",
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-		altText: "Git Icon",
-		text: "Git & Github",
-		bgcolor: "#f34f29",
-		txtcolor: "#f9f8fc"
 	}
 ];

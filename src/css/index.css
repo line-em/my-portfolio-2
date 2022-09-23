@@ -7,7 +7,7 @@ body {
 	font: 400 var(--small) / 1.5 var(--serif);
 	color: var(--dark);
 	background: var(--less-pink);
-	background: linear-gradient(to bottom, var(--less-pink) 60%, var(--grad-purple));
+	background: linear-gradient(to bottom, var(--less-pink) 50%, var(--grad-purple));
 	background-attachment: fixed;
 	overflow-x: hidden;
 }
@@ -64,13 +64,12 @@ h4 {
 }
 
 :is(h3, .typed_text) {
-	font-size: clamp(0.9rem, 0.9vw + 1rem, 1.8rem);
-	font-style: italic;
+	font-size: clamp(0.8rem, 0.8rem + 1vw, 1.65rem);
 	color: var(--75-less-dark);
 }
 
 .typed_text {
-	color: var(--less-dark);
+	color: var(--dark-pink);
 }
 
 p {
@@ -104,7 +103,7 @@ a {
 }
 
 a:not(.float_nav_content a) {
-	color: var(--white);
+	color: var(--bright-pink);
 	font-weight: 700;
 	text-decoration: var(--grad-purple) var(--decoration) underline solid;
 	display: inline-block;
@@ -116,7 +115,7 @@ a:not(.float_nav_content a) {
 }
 
 a:not(.float_nav_content a):hover {
-	color: var(--white);
+	color: var(--less-pink);
 	transition: color 0.2s ease-in-out;
 }
 
@@ -230,18 +229,54 @@ buttons
 }
 
 /***********************************
+ANIMATION
+***********************************/
+
+.float {
+	animation: float 5s ease-in-out infinite;
+	filter: drop-shadow(0 50px 100px var(--pink));
+}
+
+.tiny-float {
+	animation: tiny-float 5s ease-in-out infinite;
+	filter: drop-shadow(0 50px 100px var(--pink));
+}
+
+.delay-1s {
+	animation-delay: 1s;
+}
+
+.wave {
+	animation: wave 2s ease-out infinite;
+	transform-origin: 70% 70%;
+}
+
+.wave:hover {
+	animation-play-state: paused;
+}
+
+.wave-invert {
+	animation-play-state: paused;
+}
+
+.wave-invert:hover {
+	animation-play-state: running;
+	animation: wave 2s ease-out infinite;
+	transform-origin: 70% 70%;
+}
+
+/***********************************
 UTILS
 ***********************************/
+
+#home {
+	margin-block-start: 0.5rem;
+}
 
 .border_style {
 	border: solid var(--less-pink) 2px;
 	background-color: var(--less-dark);
 	border-radius: var(--medium);
-}
-
-.float {
-	animation: float 5s ease-in-out infinite;
-	filter: drop-shadow(0 0 50px var(--grad-purple));
 }
 
 .center {

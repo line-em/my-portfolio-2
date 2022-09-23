@@ -9,7 +9,7 @@ const Projects = () => {
 			<div className="neg-top">
 				<h1>My Projects</h1>
 				<section className="project_container col-4">
-					<div className="project_box">
+					<div className="project_box float">
 						<div className="project_image">
 							<img src="../src/misc/project/quizzical2.png" />
 						</div>
