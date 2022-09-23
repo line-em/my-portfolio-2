@@ -1,17 +1,11 @@
-import React from "react";
-import IconItem from "../components/IconItem";
 import useWindowDimensions from "../hooks/useWindowDimensions";
-import tools from "../data/tools";
-import design from "../data/design";
-import { Link } from "react-router-dom";
-import { LinkedinLogo, GithubLogo } from "phosphor-react";
+import AboutElement from "../components/AboutElement";
+import SkillsElement from "../components/SkillsElement";
+import SocialsElement from "../components/SocialsElement";
 
 function About() {
-	// FIXME: SVG with low contrast.
-	// FIXME: Check grammar and styles.
-	// FIXME: Flex on socials
-
 	const { width: windowWidth } = useWindowDimensions();
+
 	return (
 		<section
 			className={`main_container main_large text-justify ${
@@ -20,69 +14,21 @@ function About() {
 			role="note"
 			id="about"
 		>
-			<article>
-				<h2>About me</h2>
-				<p>
-					I'm Aline, a <strong>front-end developer</strong> currently based on Portugal,
-					building web applications using React and looking for a{" "}
-					<strong>career change</strong>. I love delivering good and{" "}
-					<strong>responsive user interfaces</strong> and I'm ready to tackle more
-					challenges! <strong>I enjoy CSS</strong>, and it's one of the things I'm most
-					excited to work with and to get better at. I also want to learn new tech related
-					to it, such as Sass!
-				</p>
-				<p>
-					I'm a hard worker and eager to learn more. If you want to get in touch with me,
-					please <Link to="/contact">come over here!</Link> You can also reach out via my
-					socials.
-				</p>
-				<p>
-					Want to check <Link to="/projects">some of my projects?</Link>
-				</p>
-				<hr />
-			</article>
-			<article>
-				<h2>Tech Skills</h2>
-				<div className="skills">
-					{tools.map((tool) => (
-						<IconItem
-							key={tool.id}
-							abbr={tool.abbr}
-							src={tool.src}
-							altText={tool.altText}
-							text={tool.text}
-							bgcolor={tool.bgcolor}
-							txtcolor={tool.txtcolor}
-							animationClass={tool.id % 2 ? "tiny-float" : "tiny-float delay-1s"}
-						/>
-					))}
-				</div>
-
-				<p>
-					I've been studying <strong>testing</strong>, and I've also worked with{" "}
-					<strong>Tailwind</strong>, <strong>Firebase</strong>, and{" "}
-					<strong>React-Router</strong>.
-				</p>
-				<hr />
-				<h2>Design Skills</h2>
-				<div className="skills">
-					{design.map((tool) => (
-						<IconItem
-							key={tool.id}
-							abbr={tool.abbr}
-							src={tool.src}
-							altText={tool.altText}
-							text={tool.text}
-							bgcolor={tool.bgcolor}
-							txtcolor={tool.txtcolor}
-							animationClass={tool.id % 2 ? "tiny-float" : "tiny-float delay-1s"}
-						/>
-					))}
-				</div>
-				<hr />
+			<article className={`rotate-3 ${windowWidth > 1000 ? "neg-left" : "pos-bottom"}`}>
+				<AboutElement />
 			</article>
 
-			<article className="fun">
+			<article
+				className={windowWidth < 1000 && `rotate3 ${windowWidth > 700 && "pos-bottom"}`}
+			>
+				<SkillsElement />
+			</article>
+
+			<article
+				className={`${windowWidth > 700 ? "rotate3" : "rotate-3"} ${
+					windowWidth < 1000 ? "neg-top" : ""
+				}`}
+			>
 				<h2>Fun facts:</h2>
 				<p>
 					💻 My very first experience with coding was a long time ago, making some
@@ -94,26 +40,24 @@ function About() {
 					past!
 				</p>
 				<p>
-					🐱 I love spending time with my cat, Leia, the rebel princess 👑. She's one
-					talkative kitten!
+					🐱 I love spending time with my cat, Leia, the rebel princess herself! She's one
+					talkative kitten.
 				</p>
 
-				<hr />
-				<h3>Socials</h3>
-				<GithubLogo color="var(--dark-pink)" size="24" weight="fill" />
-				<a href="https://github.com/line-em" target="_blank" rel="noopener noreferrer">
-					Github
-				</a>
-				<br />
-				<LinkedinLogo color="var(--dark-pink)" size="24" weight="fill" />
-				<a
-					href="https://www.linkedin.com/in/alineemily/"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					LinkedIn
-				</a>
+				{windowWidth > 1000 && (
+					<>
+						<hr />
+						<h2>Socials</h2>
+						<SocialsElement />
+					</>
+				)}
 			</article>
+			{windowWidth < 1000 && (
+				<article className={windowWidth > 700 ? "rotate-3 pos-top" : "rotate3 pos-top"}>
+					<h2>Socials</h2>
+					<SocialsElement />
+				</article>
+			)}
 		</section>
 	);
 }

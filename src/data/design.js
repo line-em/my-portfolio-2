@@ -1,47 +1,47 @@
 export default [
 	{
 		id: 1,
-		abbr: "Illustrator",
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg",
+		abbr: "Adobe Illustrator",
+		src: "../src/misc/icon/adobeillustrator.svg",
 		altText: "Illustrator icon",
-		text: "Illustrator",
-		txtcolor: "#221126",
-		bgcolor: "orange"
+		text: "Adobe Illustrator",
+		txtcolor: "white",
+		bgcolor: "#d35e01"
 	},
 	{
 		id: 2,
-		abbr: "After Effects",
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-plain.svg",
+		abbr: "Adobe After Effects",
+		src: "../src/misc/icon/adobeaftereffects.svg",
 		altText: "After Effects icon",
-		text: "After Effects",
-		bgcolor: "#1f0740",
+		text: "Adobe After Effects",
+		bgcolor: "#5d5dc6",
 		txtcolor: "#f9f8fc"
 	},
 	{
 		id: 3,
-		abbr: "Photoshop",
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg",
+		abbr: "Adobe Photoshop",
+		src: "../src/misc/icon/adobephotoshop.svg",
 		altText: "Photoshop icon",
-		text: "Photoshop",
-		txtcolor: "#221126",
-		bgcolor: "#61dafb"
+		text: "Adobe Photoshop",
+		txtcolor: "white",
+		bgcolor: "#00adef"
 	},
 	{
 		id: 4,
-		abbr: "Premiere",
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg",
+		abbr: "Adobe Premiere",
+		src: "../src/misc/icon/adobepremierepro.svg",
 		altText: "Premiere icon",
-		text: "Premiere",
-		bgcolor: "#1f0740",
+		text: "Adobe Premiere",
+		bgcolor: "#2c8ebb",
 		txtcolor: "#f9f8fc"
 	},
 	{
 		id: 5,
-		abbr: "Indesign",
+		abbr: "Adobe Indesign",
 		src: "../src/misc/icon/adobeindesign.svg",
 		altText: "Indesign Icon",
-		text: "Indesign",
-		bgcolor: "#2c8ebb",
+		text: "Adobe Indesign",
+		bgcolor: "#c53e60",
 		txtcolor: "#f9f8fc"
 	}
 ];

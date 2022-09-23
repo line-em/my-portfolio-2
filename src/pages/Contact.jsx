@@ -1,6 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { Envelope } from "phosphor-react";
 import React, { useRef } from "react";
+import SocialsElement from "../components/SocialsElement";
 import { useToggle } from "../hooks/useToggle";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
@@ -32,8 +33,9 @@ const Contact = () => {
 					color="var(--dark-pink)"
 					className="wave-invert"
 				/>
-				<h3>Drop me a line!</h3>
-				<hr />
+				<h3 className="pos-bottom">Drop me a line!</h3>
+				<SocialsElement />
+				<hr className="hr_tiny pos-top" />
 
 				<form
 					action="https://formspree.io/xqjqgjqg"

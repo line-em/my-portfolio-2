@@ -29,11 +29,11 @@ export default [
 	{
 		id: 4,
 		abbr: "React",
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+		src: "../src/misc/icon/react.svg",
 		altText: "React icon",
 		text: "React",
-		bgcolor: "#61dafb",
-		txtcolor: "#221126"
+		bgcolor: "#1b9fc4",
+		txtcolor: "#f9f8fc"
 	},
 	{
 		id: 5,

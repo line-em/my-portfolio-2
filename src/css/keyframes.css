@@ -10,6 +10,19 @@
 	}
 }
 
+@keyframes tilt {
+	0% {
+		rotate: 2deg;
+	}
+	50% {
+		rotate: -2deg;
+	}
+
+	100% {
+		rotate: 0deg;
+	}
+}
+
 @keyframes tiny-float {
 	0% {
 		transform: translateY(0);

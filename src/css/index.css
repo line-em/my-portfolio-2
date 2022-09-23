@@ -108,6 +108,7 @@ a:not(.float_nav_content a) {
 	text-decoration: var(--grad-purple) var(--decoration) underline solid;
 	display: inline-block;
 	position: relative;
+	background-color: var(--50-less-white);
 }
 
 [data-theme="light"] a:not(.float_nav_content a) {
@@ -243,6 +244,10 @@ ANIMATION
 	filter: drop-shadow(0 50px 100px var(--pink));
 }
 
+.tilt:hover {
+	animation: tilt 0.5s ease-in-out;
+}
+
 .delay-1s {
 	animation-delay: 1s;
 }
@@ -269,10 +274,6 @@ ANIMATION
 /***********************************
 UTILS
 ***********************************/
-
-#home {
-	margin-block-start: 0.5rem;
-}
 
 .border_style {
 	border: solid var(--less-pink) 2px;
@@ -305,4 +306,16 @@ UTILS
 
 .neg-top {
 	margin-block-start: -2.5rem;
+}
+
+.neg-left {
+	margin-inline-start: -1rem;
+}
+
+.pos-top {
+	margin-block-start: 1.9rem;
+}
+
+.pos-bottom {
+	margin-block-end: 1.5rem;
 }

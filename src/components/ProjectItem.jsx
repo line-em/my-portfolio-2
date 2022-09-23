@@ -1,4 +1,3 @@
-// import { useToggle } from "../hooks/useToggle";
 import { ArrowFatLeft, ArrowFatRight } from "phosphor-react";
 import { useState } from "react";
 
@@ -19,10 +18,7 @@ const ProjectItem = ({ image, title, live, github, tech, description, id }) => {
 	};
 
 	return (
-		<section
-			className={`project_box ${id % 2 ? "tiny-float" : "tiny-float delay-1s"}`}
-			key={id}
-		>
+		<section className="project_box tilt" key={id}>
 			{typeof image !== "string" ? (
 				<>
 					<div className="project_arrows">
@@ -49,9 +45,9 @@ const ProjectItem = ({ image, title, live, github, tech, description, id }) => {
 			<h4>
 				{title} - <a href={live}>Live</a> / <a href={github}>GitHub</a>
 			</h4>
-			<section className="project_tech">
+			<section className="project_tech ">
 				{tech.map((tech) => (
-					<span className="project_badge">{tech}</span>
+					<span className="project_badge ">{tech}</span>
 				))}
 			</section>
 			<section className="project_details text-justify">

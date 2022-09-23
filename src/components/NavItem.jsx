@@ -4,7 +4,7 @@ import { useMatch } from "react-router-dom";
 export default function NavItem({ currentTab, tab, setCurrentTab }) {
 	return (
 		<li
-			className={currentTab === tab ? "float_nav_selected" : "border_style"}
+			className={currentTab === tab ? "float_nav_selected tilt" : "border_style tilt"}
 			disabled={currentTab === tab ? true : ""}
 			onClick={() => setCurrentTab(tab)}
 		>

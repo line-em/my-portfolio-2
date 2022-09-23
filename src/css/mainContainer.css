@@ -59,6 +59,14 @@ section article:last-of-type {
 
 /* skills container */
 
+.rotate-3 {
+	transform: rotate(-3deg);
+}
+
+.rotate3 {
+	transform: rotate(3deg);
+}
+
 .skills {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -82,7 +90,13 @@ section article:last-of-type {
 	background-color: var(--50-less-white);
 	padding: var(--decoration) var(--tiny);
 	border-radius: var(--small);
-	box-shadow: var(--shadow);
+}
+
+.social_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
 }
 
 /* media queries */
