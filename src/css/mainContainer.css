@@ -19,6 +19,7 @@
 .project_container {
 	display: grid;
 	gap: 55px;
+	position: relative;
 }
 
 .col-2 {

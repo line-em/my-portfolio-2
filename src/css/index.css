@@ -56,9 +56,9 @@ h2 {
 
 h4 {
 	width: 100%;
-	background-color: var(--50-less-dark);
+	background-color: var(--50-less-white);
 	padding: var(--tiny);
-	color: var(--white);
+	color: var(--dark);
 	margin: 0;
 	letter-spacing: 1px;
 }

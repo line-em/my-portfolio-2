@@ -1,11 +1,8 @@
 import React from "react";
 import ProjectItem from "../components/ProjectItem";
-import { useToggle } from "../hooks/useToggle";
 import projects from "../data/projects";
 
 const Projects = () => {
-	const [selected, toggleSelected] = useToggle();
-
 	const listOfProjects = projects.map((project) => (
 		<ProjectItem
 			key={project.id}
@@ -22,7 +19,7 @@ const Projects = () => {
 	return (
 		<section className="main_container main_large" role="note" id="about">
 			<div className="neg-top">
-				<h1>My Projects</h1>
+				<h2>My Projects</h2>
 				<section className="project_container col-4">{listOfProjects}</section>
 
 				<p>
