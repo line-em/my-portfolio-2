@@ -1,8 +1,10 @@
 import React from "react";
 import ProjectItem from "../components/ProjectItem";
 import projects from "../data/projects";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 const Projects = () => {
+	const { width: windowWidth } = useWindowDimensions();
 	const listOfProjects = projects.map((project) => (
 		<ProjectItem
 			key={project.id}
@@ -20,7 +22,13 @@ const Projects = () => {
 		<section className="main_container main_large" role="note" id="about">
 			<div className="neg-top">
 				<h2>My Projects</h2>
-				<section className="project_container col-4">{listOfProjects}</section>
+				<section
+					className={`project_container ${
+						windowWidth > 1520 ? "col-4" : windowWidth > 670 ? "col-2" : ""
+					}`}
+				>
+					{listOfProjects}
+				</section>
 
 				<p>
 					Currently, I'm ironing out the bugs on this{" "}
