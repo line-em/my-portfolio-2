@@ -43,7 +43,14 @@ const ProjectItem = ({ image, title, live, github, tech, description, id }) => {
 				</div>
 			)}
 			<h4>
-				{title} - <a href={live}>Live</a> / <a href={github}>GitHub</a>
+				{title} -{" "}
+				<a href={live} target="_blank" rel="noopener noreferrer">
+					Live
+				</a>{" "}
+				/{" "}
+				<a href={github} target="_blank" rel="noopener noreferrer">
+					GitHub
+				</a>
 			</h4>
 			<section className="project_tech ">
 				{tech.map((tech) => (

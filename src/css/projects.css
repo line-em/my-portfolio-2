@@ -2,6 +2,7 @@
 	border-radius: var(--base);
 	background-color: var(--50-less-white);
 	box-shadow: var(--clay-shadow);
+	position: relative;
 }
 
 .project_details {
@@ -36,7 +37,7 @@
 .project_image {
 	border-radius: var(--base) var(--base) 0 0;
 	overflow: hidden;
-
+	width: 100%;
 	height: 200px;
 }
 
@@ -46,12 +47,12 @@
 	object-position: center;
 	width: 100%;
 	height: 100%;
-	transform: scale(1.1);
+	transform: scale(1);
 	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
 .project_image img:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 .project_tech {
