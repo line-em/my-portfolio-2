@@ -4,7 +4,7 @@ export default [
 		abbr: "Adobe Illustrator",
 		src: "../src/misc/icon/adobeillustrator.svg",
 		altText: "Illustrator icon",
-		text: "Adobe Illustrator",
+		text: "Illustrator",
 		txtcolor: "white",
 		bgcolor: "#d35e01"
 	},
@@ -13,7 +13,7 @@ export default [
 		abbr: "Adobe After Effects",
 		src: "../src/misc/icon/adobeaftereffects.svg",
 		altText: "After Effects icon",
-		text: "Adobe After Effects",
+		text: "After Effects",
 		bgcolor: "#5d5dc6",
 		txtcolor: "#f9f8fc"
 	},
@@ -22,7 +22,7 @@ export default [
 		abbr: "Adobe Photoshop",
 		src: "../src/misc/icon/adobephotoshop.svg",
 		altText: "Photoshop icon",
-		text: "Adobe Photoshop",
+		text: "Photoshop",
 		txtcolor: "white",
 		bgcolor: "#00adef"
 	},
@@ -31,7 +31,7 @@ export default [
 		abbr: "Adobe Premiere",
 		src: "../src/misc/icon/adobepremierepro.svg",
 		altText: "Premiere icon",
-		text: "Adobe Premiere",
+		text: "Premiere",
 		bgcolor: "#2c8ebb",
 		txtcolor: "#f9f8fc"
 	},
@@ -40,7 +40,7 @@ export default [
 		abbr: "Adobe Indesign",
 		src: "../src/misc/icon/adobeindesign.svg",
 		altText: "Indesign Icon",
-		text: "Adobe Indesign",
+		text: "Indesign",
 		bgcolor: "#c53e60",
 		txtcolor: "#f9f8fc"
 	}

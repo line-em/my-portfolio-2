@@ -30,7 +30,7 @@ const Projects = () => {
 					{listOfProjects}
 				</section>
 
-				<p className="pos-top text-center pos-bottom">
+				<p className="pos-top text-center text-white pos-bottom">
 					Currently, I'm ironing out the bugs on this{" "}
 					<a
 						href="https://github.com/line-em/react-netflix"

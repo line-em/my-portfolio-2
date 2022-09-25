@@ -10,7 +10,7 @@ const AboutElement = () => {
 				<strong>career change</strong>. I love delivering good and{" "}
 				<strong>responsive user interfaces</strong> and I'm ready to tackle more challenges!{" "}
 				<strong>I enjoy CSS</strong>, and it's one of the things I'm most excited to work
-				with and get better at. I also want to learn new skills related to it, such as Sass!
+				with and get better at.
 			</p>
 			<p>
 				I'm a hard worker and eager to learn more. If you want to get in touch with me,

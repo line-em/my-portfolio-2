@@ -32,8 +32,9 @@ function About() {
 				<h2>Fun facts:</h2>
 				<p>
 					💻 My very first experience with coding was a long time ago, making some
-					fansites of things I liked when I was a kid! I'm really glad I've picked up
-					programming again.
+					fansites of things I liked when I was a kid, before HTML5! It's wonderful to see
+					how things evolved since then, and I'm really glad I've picked up programming
+					again.
 				</p>
 				<p>
 					🎮 I love books, games and animation. I also already worked with games in the

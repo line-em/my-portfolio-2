@@ -41,7 +41,7 @@ export default [
 		id: "4",
 		title: "Weather App",
 		description:
-			"In this project I used React to create a weather app. I used an API, and it fetches the weather data and forecast for several days. I included error and loading states, and the background responds to the weather. The interface is inspired by an application window! I also used a little of Express.js.",
+			"In this project I used React to create a weather app. I used an API, and it fetches the weather data and forecast for several days. I included error and loading states, and the background responds to the weather. The interface is inspired by an application window! I also learned a bit of Express.js.",
 		tech: ["React", "Axios"],
 		image: ["../src/misc/project/weatherapp2.png", "../src/misc/project/weatherapp3.png"],
 		github: "https://github.com/line-em/react-weather-app",
