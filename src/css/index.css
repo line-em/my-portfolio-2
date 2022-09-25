@@ -4,12 +4,16 @@
 }
 
 body {
+	position: relative;
 	font: 400 var(--small) / 1.5 var(--serif);
 	color: var(--dark);
 	background: var(--less-pink);
 	background: linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background-attachment: fixed;
-	overflow-x: hidden;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
 }
 
 [data-theme="light"] body {
