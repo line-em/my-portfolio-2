@@ -16,9 +16,9 @@ const Home = () => {
 				"tea lover 🫖",
 				"cat mom 🐱",
 				"bookworm 📚",
-				"creative 🎨",
-				"sci-fi and fantasy fan 🚀",
-				"video game player 🎮"
+				"creative designer 🎨",
+				"sci-fi/fantasy fan 🚀",
+				"gamer 🎮"
 			],
 			typeSpeed: 60,
 			backSpeed: 40,

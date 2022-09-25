@@ -43,14 +43,6 @@ function About() {
 					🐱 I love spending time with my cat, Leia, the rebel princess herself! She's one
 					talkative kitten.
 				</p>
-
-				{windowWidth > 1000 && (
-					<>
-						<hr />
-						<h2>Socials</h2>
-						<SocialsElement />
-					</>
-				)}
 			</article>
 			{windowWidth < 1000 && (
 				<article className={windowWidth > 700 ? "rotate-3 pos-top" : "rotate3 pos-top"}>

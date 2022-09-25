@@ -211,9 +211,16 @@ buttons
 ***********************************/
 
 .hamburger {
+	display: none;
 	position: absolute;
-	right: 10px;
-	margin-inline-end: var(--small);
+	left: 0;
+	z-index: 20;
+}
+
+@media screen and (max-width: 400px) {
+	.hamburger {
+		display: block;
+	}
 }
 
 .button_style {
@@ -222,7 +229,7 @@ buttons
 	transform: 0;
 }
 
-.button_style:hover {
+.button_style:not(.hamburger):hover {
 	background-color: var(--pink);
 }
 

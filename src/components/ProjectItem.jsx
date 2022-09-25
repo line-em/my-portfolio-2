@@ -10,8 +10,6 @@ const ProjectItem = ({ image, title, live, github, tech, description, id }) => {
 
 		if (currentIndex === maxIndex) {
 			return setImageIndex(0);
-		} else if (currentIndex === 0) {
-			return setImageIndex(maxIndex);
 		} else {
 			return setImageIndex((prev) => prev + 1);
 		}

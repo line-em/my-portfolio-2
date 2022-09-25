@@ -1,6 +1,10 @@
 /***********************************
 FIXED NAV
 ***********************************/
+.pos-relative {
+	position: relative;
+}
+
 .float_nav {
 	position: absolute;
 	margin: 5px auto;
@@ -8,6 +12,12 @@ FIXED NAV
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.float_nav_column {
+	position: absolute;
+	flex-direction: column;
+	right: 0;
 }
 
 .float_nav_content {
@@ -58,18 +68,13 @@ FIXED NAV
 }
 
 @media screen and (max-width: 700px) {
-	.float_nav_content {
-		margin: 5px var(--decoration);
-	}
-	.float_nav_content li {
-		padding: var(--decoration) var(--tiny);
+	.float_nav_content:not(.float_nav_column) li {
+		padding: var(--tiny) var(--tiny);
 	}
 }
 
 @media screen and (max-width: 550px) {
-	.float_nav_content {
-		margin: 5px var(--tiny);
-		justify-content: flex-start;
+	.float_nav_content:not(.float_nav_column) {
 		flex-wrap: wrap;
 		row-gap: 10px;
 		width: 80%;
@@ -83,7 +88,7 @@ FIXED NAV
 		display: block;
 		margin: 15px;
 	}
-	.float_nav_content {
+	.float_nav_content:not(.float_nav_column) {
 		display: none;
 	}
 }

@@ -30,7 +30,7 @@ const Projects = () => {
 					{listOfProjects}
 				</section>
 
-				{/* <p>
+				<p className="pos-top text-center pos-bottom">
 					Currently, I'm ironing out the bugs on this{" "}
 					<a
 						href="https://github.com/line-em/react-netflix"
@@ -40,7 +40,7 @@ const Projects = () => {
 						Netflix Clone project
 					</a>{" "}
 					, and it's almost out of the oven! 🍳
-				</p> */}
+				</p>
 			</div>
 		</section>
 	);

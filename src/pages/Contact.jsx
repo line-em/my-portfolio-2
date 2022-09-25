@@ -17,6 +17,7 @@ const Contact = () => {
 			.sendForm("service_wt1n5fr", "template_ej104ab", formRef.current, "F9Y_vVQS1p8Uu3uud")
 			.then((result) => {
 				isSent(true);
+				e.target.reset();
 				console.log(result);
 			})
 			.catch((error) => {
