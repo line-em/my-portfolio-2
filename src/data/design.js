@@ -2,7 +2,7 @@ export default [
 	{
 		id: 1,
 		abbr: "Adobe Illustrator",
-		src: "../src/misc/icon/adobeillustrator.svg",
+		src: "../misc/icon/adobeillustrator.svg",
 		altText: "Illustrator icon",
 		text: "Illustrator",
 		txtcolor: "white",
@@ -11,7 +11,7 @@ export default [
 	{
 		id: 2,
 		abbr: "Adobe After Effects",
-		src: "../src/misc/icon/adobeaftereffects.svg",
+		src: "../misc/icon/adobeaftereffects.svg",
 		altText: "After Effects icon",
 		text: "After Effects",
 		bgcolor: "#5d5dc6",
@@ -20,7 +20,7 @@ export default [
 	{
 		id: 3,
 		abbr: "Adobe Photoshop",
-		src: "../src/misc/icon/adobephotoshop.svg",
+		src: "../misc/icon/adobephotoshop.svg",
 		altText: "Photoshop icon",
 		text: "Photoshop",
 		txtcolor: "white",
@@ -29,7 +29,7 @@ export default [
 	{
 		id: 4,
 		abbr: "Adobe Premiere",
-		src: "../src/misc/icon/adobepremierepro.svg",
+		src: "../misc/icon/adobepremierepro.svg",
 		altText: "Premiere icon",
 		text: "Premiere",
 		bgcolor: "#2c8ebb",
@@ -38,7 +38,7 @@ export default [
 	{
 		id: 5,
 		abbr: "Adobe Indesign",
-		src: "../src/misc/icon/adobeindesign.svg",
+		src: "../misc/icon/adobeindesign.svg",
 		altText: "Indesign Icon",
 		text: "Indesign",
 		bgcolor: "#c53e60",
