@@ -6,9 +6,9 @@ export default [
 			"Generate customized quizzes and check how you've fared! It gathers data from an API and validates it. The app has a light and a dark mode, an animated svg background, and various visual feedbacks depending on user state! It also celebrates your victory 🎉",
 		tech: ["React", "Javascript", "Open Trivia API", "CSS Grid", "CSS animation"],
 		image: [
-			"/my-portfolio-2/project/quizzical.png",
-			"/my-portfolio-2/project/quizzical2.png",
-			"/my-portfolio-2/project/quizzical3.png"
+			`${import.meta.env.BASE_URL}/project/quizzical.png`,
+			`${import.meta.env.BASE_URL}/project/quizzical2.png`,
+			`${import.meta.env.BASE_URL}/project/quizzical3.png`
 		],
 		github: "https://github.com/line-em/Quizzical",
 		live: "https://line-em.github.io/Quizzical/"
