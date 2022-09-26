@@ -40,7 +40,7 @@ function About() {
 					🎮 I love books, games and animation. I also already worked with games in the
 					past!
 				</p>
-				<p>
+				<p className="pos-bottom">
 					🐱 I love spending time with my cat, Leia, the rebel princess herself! She's one
 					talkative kitten.
 				</p>
