@@ -1,19 +1,22 @@
+::-moz-selection {
+	background: var(--pink);
+	color: var(--white);
+}
+
 ::selection {
 	background: var(--pink);
 	color: var(--white);
 }
 
 body {
-	position: relative;
 	font: 400 var(--small) / 1.5 var(--serif);
 	color: var(--dark);
 	background: var(--less-pink);
 	background: linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background-attachment: fixed;
-	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100%;
+	overflow: hidden;
 }
 
 [data-theme="light"] body {
@@ -21,11 +24,13 @@ body {
 }
 
 #root {
+	position: relative;
 	min-height: 100vh;
 	height: 100vh;
 	display: grid;
 	grid-template-rows: var(--s-height) auto 60px;
 	grid-template-columns: 1fr;
+	overflow: hidden;
 }
 
 /************************
@@ -39,12 +44,15 @@ BASE STYLES
 
 h1 {
 	font-size: clamp(1.5rem, 2.1vw + 1rem, 3rem);
+	-webkit-text-decoration: underline var(--white) var(--decoration);
 	text-decoration: underline var(--white) var(--decoration);
 	background-image: radial-gradient(circle, var(--dark-pink), var(--grad-purple));
 	color: transparent;
+	-webkit-background-clip: text;
 	background-clip: text;
 	background-size: 200%;
 	background-position: -200%;
+	-webkit-animation: title-text-gradient 5s linear infinite;
 	animation: title-text-gradient 5s linear infinite;
 }
 
@@ -55,6 +63,7 @@ h1 {
 h2 {
 	font-size: clamp(1.2rem, 1vw + 1rem, 2rem);
 	color: var(--dark-pink);
+	-webkit-text-decoration: underline var(--white) var(--decoration);
 	text-decoration: underline var(--white) var(--decoration);
 }
 
@@ -109,6 +118,7 @@ a {
 a:not(.float_nav_content a) {
 	color: var(--bright-pink);
 	font-weight: 700;
+	-webkit-text-decoration: var(--grad-purple) var(--decoration) underline solid;
 	text-decoration: var(--grad-purple) var(--decoration) underline solid;
 	display: inline-block;
 	position: relative;
@@ -246,38 +256,49 @@ ANIMATION
 ***********************************/
 
 .float {
+	-webkit-animation: float 5s ease-in-out infinite;
 	animation: float 5s ease-in-out infinite;
+	-webkit-filter: drop-shadow(0 50px 100px var(--pink));
 	filter: drop-shadow(0 50px 100px var(--pink));
 }
 
 .tiny-float {
+	-webkit-animation: tiny-float 5s ease-in-out infinite;
 	animation: tiny-float 5s ease-in-out infinite;
+	-webkit-filter: drop-shadow(0 50px 100px var(--pink));
 	filter: drop-shadow(0 50px 100px var(--pink));
 }
 
 .tilt:hover {
+	-webkit-animation: tilt 0.5s ease-in-out;
 	animation: tilt 0.5s ease-in-out;
 }
 
 .delay-1s {
+	-webkit-animation-delay: 1s;
 	animation-delay: 1s;
 }
 
 .wave {
+	-webkit-animation: wave 2s ease-out infinite;
 	animation: wave 2s ease-out infinite;
 	transform-origin: 70% 70%;
 }
 
 .wave:hover {
+	-webkit-animation-play-state: paused;
 	animation-play-state: paused;
 }
 
 .wave-invert {
+	-webkit-animation-play-state: paused;
 	animation-play-state: paused;
 }
 
 .wave-invert:hover {
+	-webkit-animation-play-state: running;
 	animation-play-state: running;
+	-webkit-animation: wave 2s ease-out infinite;
 	animation: wave 2s ease-out infinite;
 	transform-origin: 70% 70%;
 }
@@ -311,22 +332,28 @@ UTILS
 }
 
 .extra-padding-x {
+	-webkit-padding-start: var(--medium);
 	padding-inline-start: var(--medium);
+	-webkit-padding-end: var(--medium);
 	padding-inline-end: var(--medium);
 }
 
 .neg-top {
+	-webkit-margin-before: -2.5rem;
 	margin-block-start: -2.5rem;
 }
 
 .neg-left {
+	-webkit-margin-start: -1rem;
 	margin-inline-start: -1rem;
 }
 
 .pos-top {
+	-webkit-margin-before: 1.9rem;
 	margin-block-start: 1.9rem;
 }
 
 .pos-bottom {
+	-webkit-margin-after: 1.5rem;
 	margin-block-end: 1.5rem;
 }
