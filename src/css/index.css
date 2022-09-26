@@ -11,7 +11,8 @@
 body {
 	font: 400 var(--small) / 1.5 var(--serif);
 	color: var(--dark);
-	background: var(--less-pink);
+	background-color: var(--grad-purple);
+	background: var(--grad-purple);
 	background-image: linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background-image: -webkit-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background-image: -o-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
@@ -23,10 +24,7 @@ body {
 	overflow-y: visible;
 	padding-bottom: 3rem;
 	min-height: 100vh;
-}
-
-[data-theme="light"] body {
-	color: var(--less-dark);
+	height: 100vh;
 }
 
 #root {
