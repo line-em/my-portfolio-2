@@ -24,11 +24,7 @@ function About() {
 				<SkillsElement />
 			</article>
 
-			<article
-				className={`${windowWidth > 700 ? "rotate3" : "rotate-3"} ${
-					windowWidth < 1000 ? "neg-top" : ""
-				} pos-bottom`}
-			>
+			<article className={`${windowWidth > 700 ? "rotate3" : "rotate-3"} pos-bottom`}>
 				<h2>Fun facts:</h2>
 				<p>
 					💻 My very first experience with coding was a long time ago, making some

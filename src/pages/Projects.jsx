@@ -23,14 +23,15 @@ const Projects = () => {
 			<div className="neg-top">
 				<h2>My Projects</h2>
 				<section
-					className={`project_container ${
-						windowWidth > 1520 ? "col-4" : windowWidth > 700 ? "col-2" : ""
-					}`}
+					className="project_container"
+					// className={`project_container ${
+					// 	windowWidth > 1520 ? "col-4" : windowWidth > 700 ? "col-2" : ""
+					// }`}
 				>
 					{listOfProjects}
 				</section>
 
-				<p className="pos-top text-center text-white pos-bottom">
+				<p className="pos-top text-center pos-bottom">
 					Currently, I'm ironing out the bugs on this{" "}
 					<a
 						href="https://github.com/line-em/react-netflix"

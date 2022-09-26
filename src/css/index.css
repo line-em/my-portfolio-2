@@ -12,17 +12,9 @@ body {
 	font: 400 var(--small) / 1.5 var(--serif);
 	color: var(--dark);
 	background-color: var(--less-pink);
-
+	background-size: cover;
+	background-attachment: fixed;
 	overflow-x: hidden;
-}
-
-@media screen and (max-width: 800px) {
-	body {
-		background: linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
-		background: -webkit-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
-		background-size: cover;
-		background-attachment: fixed;
-	}
 }
 
 #root {
@@ -30,6 +22,7 @@ body {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	min-height: 100vh;
+	height: -webkit-fill-available;
 	display: grid;
 	grid-template-rows: var(--s-height) auto 60px;
 	grid-template-columns: 1fr;

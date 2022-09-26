@@ -1,4 +1,5 @@
 .project_box {
+	width: 100%;
 	border-radius: var(--base);
 	background-color: var(--50-less-white);
 	box-shadow: var(--clay-shadow);

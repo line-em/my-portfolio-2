@@ -19,7 +19,20 @@
 .project_container {
 	display: grid;
 	gap: 55px;
+	grid-template-columns: repeat(1, 1fr);
 	position: relative;
+}
+
+@media screen and (min-width: 630px) {
+	.project_container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 1570px) {
+	.project_container {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 .col-2 {
