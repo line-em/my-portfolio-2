@@ -24,7 +24,7 @@ const Projects = () => {
 				<h2>My Projects</h2>
 				<section
 					className={`project_container ${
-						windowWidth > 1520 ? "col-4" : windowWidth > 670 ? "col-2" : ""
+						windowWidth > 1520 ? "col-4" : windowWidth > 700 ? "col-2" : ""
 					}`}
 				>
 					{listOfProjects}
