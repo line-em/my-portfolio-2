@@ -25,7 +25,7 @@ function About() {
 			</article>
 
 			<article
-				className={`${windowWidth > 700 ? "rotate3" : "rotate3"} ${
+				className={`${windowWidth > 700 ? "rotate3" : "rotate-3"} ${
 					windowWidth < 1000 ? "neg-top" : ""
 				} pos-bottom`}
 			>
