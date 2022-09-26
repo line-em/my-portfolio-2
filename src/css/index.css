@@ -9,38 +9,28 @@
 }
 
 body {
-	/* position: relative; */
 	font: 400 var(--small) / 1.5 var(--serif);
 	color: var(--dark);
-	/* background-color: var(--grad-purple); */
 	background-color: var(--less-pink);
-	/* background: var(--grad-purple);
-	background: linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple)); */
-	/* background: -webkit-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
-	background: -o-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
-	background: -moz-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple)); */
-	background-size: cover;
-	background-attachment: fixed;
-	/* 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover; */
-	/* background-repeat: no-repeat; */
+
 	overflow-x: hidden;
 }
 
+@media screen and (max-width: 800px) {
+	body {
+		background: linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
+		background: -webkit-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}
+
 #root {
-	/* position: relative; */
-	/* overflow: hidden; */
+	position: relative;
+	overflow-x: hidden;
 	display: grid;
 	grid-template-rows: var(--s-height) auto 60px;
 	grid-template-columns: 1fr;
-}
-
-@media screen and (max-width: 800px) {
-	#root {
-		height: 50vh;
-	}
 }
 
 /************************
