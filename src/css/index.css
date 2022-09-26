@@ -17,17 +17,17 @@ body {
 	background: -webkit-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background: -o-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background: -moz-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
-	background: linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
-	background: -webkit-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
+	background-image: linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
+	background-image: -webkit-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background-image: -o-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background-image: -moz-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background-attachment: fixed;
-	/* 
 	background-size: cover;
-	background-repeat: no-repeat; */
+	/* 	background-repeat: no-repeat; */
 	overflow-x: hidden;
 	overflow-y: visible;
 	min-height: 100vh;
+	height: 100%;
 }
 
 #root {
