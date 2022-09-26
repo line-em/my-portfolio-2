@@ -27,13 +27,9 @@ body {
 	overflow-x: hidden;
 }
 
-body::before {
-	background: var(--grad-purple);
-}
-
 #root {
 	/* position: relative; */
-	height: auto;
+	height: 80vh;
 	overflow-y: visible;
 	/* height: 100vh; */
 	/* overflow: hidden; */
@@ -43,7 +39,7 @@ body::before {
 }
 
 #home {
-	overflow-y: hidden;
+	height: 50vh;
 }
 
 /************************
