@@ -12,9 +12,10 @@ body {
 	/* position: relative; */
 	font: 400 var(--small) / 1.5 var(--serif);
 	color: var(--dark);
-	background-color: var(--grad-purple);
-	background: var(--grad-purple);
-	background: linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
+	/* background-color: var(--grad-purple); */
+	background-color: var(--less-pink);
+	/* background: var(--grad-purple);
+	background: linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple)); */
 	/* background: -webkit-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background: -o-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background: -moz-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple)); */
@@ -30,7 +31,6 @@ body {
 
 #root {
 	/* position: relative; */
-	overflow-y: visible;
 	/* overflow: hidden; */
 	display: grid;
 	grid-template-rows: var(--s-height) auto 60px;
@@ -41,10 +41,6 @@ body {
 	#root {
 		height: 50vh;
 	}
-}
-
-#home {
-	overflow-y: hidden;
 }
 
 /************************

@@ -39,7 +39,7 @@ const Home = () => {
 				src={profileImage}
 				alt=""
 				style={windowWidth > 900 ? { width: "550px" } : { width: "450px" }}
-				className="float"
+				className="float neg-top"
 				loading="lazy"
 			/>
 			<article className="description_area">
