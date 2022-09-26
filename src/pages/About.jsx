@@ -1,7 +1,6 @@
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import AboutElement from "../components/AboutElement";
 import SkillsElement from "../components/SkillsElement";
-import SocialsElement from "../components/SocialsElement";
 import React from "react";
 
 function About() {
@@ -46,12 +45,6 @@ function About() {
 					talkative kitten.
 				</p>
 			</article>
-			{windowWidth < 1000 && (
-				<article className={windowWidth > 700 ? "rotate-3 pos-top" : "rotate3 pos-top"}>
-					<h2>Socials</h2>
-					<SocialsElement />
-				</article>
-			)}
 		</section>
 	);
 }
