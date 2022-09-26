@@ -16,7 +16,8 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: visible;
 }
 
 [data-theme="light"] body {
@@ -254,6 +255,11 @@ buttons
 /***********************************
 ANIMATION
 ***********************************/
+.fadeout {
+	animation: fadeout 0.7s ease infinite;
+	-webkit-animation: fadeout 0.7s ease infinite;
+	animation-direction: alternate;
+}
 
 .float {
 	-webkit-animation: float 5s ease-in-out infinite;

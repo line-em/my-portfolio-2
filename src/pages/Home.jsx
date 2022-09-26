@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { HandWaving } from "phosphor-react";
 import { Link } from "react-router-dom";
-import profileImage from "../misc/profile_photo2_cut.png";
+import profileImage from "../public/profile_photo2_cut.png";
 import Typed from "typed.js";
 import React from "react";
 import useWindowDimensions from "../hooks/useWindowDimensions";

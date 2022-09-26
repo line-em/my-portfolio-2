@@ -10,6 +10,15 @@
 	}
 }
 
+@keyframes fadeout {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 @keyframes tilt {
 	0% {
 		rotate: 2deg;

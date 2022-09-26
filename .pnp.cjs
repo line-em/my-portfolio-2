@@ -36,6 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emailjs/browser", "npm:3.6.2"],\
             ["@types/react", "npm:18.0.15"],\
             ["@types/react-dom", "npm:18.0.6"],\
+            ["@uiball/loaders", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:1.2.6"],\
             ["@vitejs/plugin-react", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:2.0.0"],\
             ["phosphor-react", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:1.4.1"],\
             ["react", "npm:18.2.0"],\
@@ -621,6 +622,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-scheduler-npm-0.16.2-ba3a7d8c68-b6b4dcfeae.zip/node_modules/@types/scheduler/",\
           "packageDependencies": [\
             ["@types/scheduler", "npm:0.16.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@uiball/loaders", [\
+        ["npm:1.2.6", {\
+          "packageLocation": "./.yarn/cache/@uiball-loaders-npm-1.2.6-32631de17c-f5222ab2b9.zip/node_modules/@uiball/loaders/",\
+          "packageDependencies": [\
+            ["@uiball/loaders", "npm:1.2.6"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:1.2.6", {\
+          "packageLocation": "./.yarn/__virtual__/@uiball-loaders-virtual-a05e7f9d49/0/cache/@uiball-loaders-npm-1.2.6-32631de17c-f5222ab2b9.zip/node_modules/@uiball/loaders/",\
+          "packageDependencies": [\
+            ["@uiball/loaders", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:1.2.6"],\
+            ["@types/react", "npm:18.0.15"],\
+            ["@types/react-dom", "npm:18.0.6"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1866,6 +1893,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emailjs/browser", "npm:3.6.2"],\
             ["@types/react", "npm:18.0.15"],\
             ["@types/react-dom", "npm:18.0.6"],\
+            ["@uiball/loaders", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:1.2.6"],\
             ["@vitejs/plugin-react", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:2.0.0"],\
             ["phosphor-react", "virtual:0a5df46309a4383b389da73ddf9d77e27207836bce5883f1cc04c6c4c3ace19bd32b135c7f6050c0cd61b109efbe0515dca6089c934f25260a2769e5bf5e9547#npm:1.4.1"],\
             ["react", "npm:18.2.0"],\

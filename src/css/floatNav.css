@@ -27,6 +27,7 @@ FIXED NAV
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 17px;
 	height: 100%;
 	z-index: 1;
 	-webkit-padding-end: -1rem;
