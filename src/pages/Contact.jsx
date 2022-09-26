@@ -1,9 +1,10 @@
-import emailjs from "@emailjs/browser";
-import { Envelope } from "phosphor-react";
-import React, { useRef } from "react";
-import SocialsElement from "../components/SocialsElement";
+import { useRef } from "react";
 import { useToggle } from "../hooks/useToggle";
 import useWindowDimensions from "../hooks/useWindowDimensions";
+import emailjs from "@emailjs/browser";
+import SocialsElement from "../components/SocialsElement";
+import { Envelope } from "phosphor-react";
+import React from "react";
 
 const Contact = () => {
 	const formRef = useRef(null);

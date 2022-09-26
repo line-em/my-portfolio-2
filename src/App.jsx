@@ -1,26 +1,23 @@
-import React from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Nav from "./Nav";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import { Circle } from "phosphor-react";
+import React from "react";
 
 function App() {
 	return (
-		<>
-			<HashRouter>
-				<Nav />
-				<Routes>
-					<Route path="/home" element={<Home />} />
-					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/projects" element={<Projects />} />
-					<Route path="/contact" element={<Contact />} />
-				</Routes>
-			</HashRouter>
-		</>
+		<HashRouter>
+			<Nav />
+			<Routes>
+				<Route path="/home" element={<Home />} />
+				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/projects" element={<Projects />} />
+				<Route path="/contact" element={<Contact />} />
+			</Routes>
+		</HashRouter>
 	);
 }
 

@@ -1,7 +1,7 @@
-import React from "react";
 import ProjectItem from "../components/ProjectItem";
 import projects from "../data/projects";
 import useWindowDimensions from "../hooks/useWindowDimensions";
+import React from "react";
 
 const Projects = () => {
 	const { width: windowWidth } = useWindowDimensions();

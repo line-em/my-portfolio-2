@@ -2,6 +2,7 @@ import useWindowDimensions from "../hooks/useWindowDimensions";
 import AboutElement from "../components/AboutElement";
 import SkillsElement from "../components/SkillsElement";
 import SocialsElement from "../components/SocialsElement";
+import React from "react";
 
 function About() {
 	const { width: windowWidth } = useWindowDimensions();
