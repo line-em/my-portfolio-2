@@ -9,7 +9,7 @@
 }
 
 body {
-	/* position: relative; */
+	position: relative;
 	font: 400 var(--small) / 1.5 var(--serif);
 	color: var(--dark);
 	background-color: var(--grad-purple);
@@ -29,8 +29,9 @@ body {
 
 #root {
 	position: relative;
+	height: auto;
+	overflow-y: visible;
 	/* height: 100vh; */
-	overflow: visible;
 	/* overflow: hidden; */
 	display: grid;
 	grid-template-rows: var(--s-height) auto 60px;
