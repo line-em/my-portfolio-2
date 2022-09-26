@@ -9,6 +9,7 @@
 }
 
 body {
+	position: relative;
 	font: 400 var(--small) / 1.5 var(--serif);
 	color: var(--dark);
 	background-color: var(--grad-purple);
@@ -23,7 +24,7 @@ body {
 	background-image: -moz-linear-gradient(to bottom, var(--less-pink) 65%, var(--grad-purple));
 	background-attachment: fixed;
 	background-size: cover;
-	/* 	background-repeat: no-repeat; */
+	background-repeat: no-repeat;
 	overflow-x: hidden;
 	overflow-y: visible;
 	min-height: 100vh;
