@@ -5,7 +5,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import React, { useState, useEffect } from "react";
-import { Jelly } from "@uiball/loaders";
+import { Orbit } from "@uiball/loaders";
 
 function App() {
 	const [isLoading, setIsLoading] = useState(false);
@@ -20,7 +20,7 @@ function App() {
 		<HashRouter>
 			{isLoading ? (
 				<section className="main_container fadeout">
-					<Jelly size={64} color="var(--dark-pink)" />
+					<Orbit size={64} color="var(--dark-pink)" />
 				</section>
 			) : (
 				<>
