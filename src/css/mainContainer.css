@@ -54,6 +54,7 @@ article > svg {
 }
 
 section article:last-of-type {
+	-webkit-margin-after: var(--large);
 	margin-block-end: var(--large);
 }
 
@@ -82,6 +83,7 @@ section article:last-of-type {
 
 .skills_item img {
 	max-width: var(--medium);
+	-webkit-margin-end: var(--tiny);
 	margin-inline-end: var(--tiny);
 }
 

@@ -29,6 +29,7 @@ FIXED NAV
 	justify-content: space-between;
 	height: 100%;
 	z-index: 1;
+	-webkit-padding-end: -1rem;
 	padding-inline-end: -1rem;
 }
 
@@ -44,18 +45,18 @@ FIXED NAV
 	cursor: default;
 }
 
-.float_nav_content li:hover:not(.float_nav_selected) {
+.float_nav_content li:hover:not(.float_nav_content .active) {
 	background-color: var(--pink);
 	color: var(--white);
 	cursor: pointer;
 }
 
-.float_nav_content li:active:not(.float_nav_selected) {
+.float_nav_content li:active:not(.float_nav_content .active) {
 	background-color: var(--dark-pink);
 	transform: translateY(3px);
 }
 
-.float_nav_selected {
+.float_nav_content .active {
 	background-color: var(--less-pink);
 	border: none;
 	color: var(--dark);
@@ -63,7 +64,7 @@ FIXED NAV
 	border-radius: var(--medium);
 }
 
-[data-theme="light"] .float_nav_selected {
+[data-theme="light"] .float_nav_content .active {
 	color: var(--pink);
 }
 
