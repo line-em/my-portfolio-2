@@ -7,8 +7,6 @@ import Wave from "./components/Wave";
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<Wave />
-		<section className="gradient-wrapper">
-			<App />
-		</section>
+		<App />
 	</React.StrictMode>
 );
