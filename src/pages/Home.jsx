@@ -32,7 +32,6 @@ const Home = () => {
 		};
 	}, []);
 
-	// FIXME: Halftone em var(--dark) embaixo
 	return (
 		<section className="main_container col-2 text-center pos-top" role="note" id="home">
 			<img

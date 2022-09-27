@@ -22,14 +22,7 @@ const Projects = () => {
 		<section className="main_container main_large" role="note" id="about">
 			<div className="neg-top">
 				<h2>My Projects</h2>
-				<section
-					className="project_container"
-					// className={`project_container ${
-					// 	windowWidth > 1520 ? "col-4" : windowWidth > 700 ? "col-2" : ""
-					// }`}
-				>
-					{listOfProjects}
-				</section>
+				<section className="project_container">{listOfProjects}</section>
 
 				<p className="pos-top text-center pos-bottom">
 					Currently, I'm ironing out the bugs on this{" "}

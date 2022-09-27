@@ -104,3 +104,25 @@
 .project_badge:nth-of-type(4) {
 	background-color: var(--pink);
 }
+
+@media (prefers-reduced-motion) and (max-width: 400px) {
+	.project_box {
+		grid-template-rows: 220px 50px 90px 1fr;
+	}
+
+	.project_box:hover {
+		grid-template-rows: 270px 50px 90px 1fr;
+		transition: ease 1s all;
+	}
+
+	.project_box:hover .project_arrows > :is(*:first-of-type, *:last-of-type) {
+		transition: ease 0.5s all;
+		top: 15%;
+	}
+
+	.project_box:hover > .project_details > p {
+		font-size: var(--small);
+		line-height: 1.2;
+		transition: ease 0.5s all;
+	}
+}
