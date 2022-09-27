@@ -29,7 +29,7 @@ export default [
 	{
 		id: 4,
 		abbr: "React",
-		src: "/my-portfolio-2/icon/react.svg",
+		src: "/portfolio/icon/react.svg",
 		altText: "React icon",
 		text: "React",
 		bgcolor: "#1b9fc4",
@@ -38,7 +38,7 @@ export default [
 	{
 		id: 5,
 		abbr: "Yarn / NPM",
-		src: "/my-portfolio-2/icon/yarn.svg",
+		src: "/portfolio/icon/yarn.svg",
 		altText: "Yarn Icon",
 		text: "Yarn & Npm",
 		bgcolor: "#2c8ebb",
@@ -56,7 +56,7 @@ export default [
 	{
 		id: 7,
 		abbr: "REST APIs",
-		src: "/my-portfolio-2/icon/insomnia.svg",
+		src: "/portfolio/icon/insomnia.svg",
 		altText: "Insomnia Icon",
 		text: "REST APIs",
 		bgcolor: "#3f00bd",
