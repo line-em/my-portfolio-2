@@ -20,9 +20,9 @@ export default [
 			"This is a mock e-commerce website using various React hooks, such as useContext. It generates various Cat Prints with random titles and prices, with the fun Cat API! I made a CSS Modal, used the reliable React Router Dom and had fun with CSS Grid again.",
 		tech: ["React", "React PropTypes", "React Router Dom", "The Cat API", "CSS Grid", "Modal"],
 		image: [
-			"/my-portfolio-2/project/catpics1.png",
-			"/my-portfolio-2/project/catpics2.png",
-			"/my-portfolio-2/project/catpics3.png"
+			`${import.meta.env.BASE_URL}/project/catpics1.png`,
+			`${import.meta.env.BASE_URL}/project/catpics2.png`,
+			`${import.meta.env.BASE_URL}/project/catpics3.png`
 		],
 		github: "https://github.com/line-em/catpics-e-commerce",
 		live: "https://line-em.github.io/catpics-e-commerce/"
@@ -33,7 +33,10 @@ export default [
 		description:
 			"Refactoring my old plain Javascript one with React was enlightening. Even if it is a simple project, I feel like I learned a lot with it! You can create, filter, edit, complete and delete data, and it also saves data to Local Storage. Lastly, you can switch between the light and dark theme!",
 		tech: ["React", "Local Storage"],
-		image: ["/my-portfolio-2/project/todo2.png", "/my-portfolio-2/project/todo.png"],
+		image: [
+			`${import.meta.env.BASE_URL}/project/todo.png`,
+			`${import.meta.env.BASE_URL}/project/todo2.png`
+		],
 		github: "https://github.com/line-em/react-to-do",
 		live: "https://line-em.github.io/react-to-do/"
 	},
@@ -44,8 +47,8 @@ export default [
 			"In this project I used React to create a weather app. I used an API, and it fetches the weather data and forecast for several days. I included error and loading states, and the background responds to the weather. The interface is inspired by an application window! I also learned a bit of Express.js.",
 		tech: ["React", "Axios"],
 		image: [
-			"/my-portfolio-2/project/weatherapp2.png",
-			"/my-portfolio-2/project/weatherapp3.png"
+			`${import.meta.env.BASE_URL}/project/weatherapp2.png`,
+			`${import.meta.env.BASE_URL}/project/weatherapp3.png`
 		],
 		github: "https://github.com/line-em/react-weather-app",
 		live: "https://line-em.github.io/react-weather-app/"
