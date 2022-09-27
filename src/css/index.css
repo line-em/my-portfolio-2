@@ -20,7 +20,6 @@ body {
 #root {
 	position: relative;
 	overflow-x: hidden;
-	overflow-y: scroll;
 	min-height: 100vh;
 	height: -webkit-fill-available;
 	display: grid;
@@ -51,10 +50,6 @@ h1 {
 	animation: title-text-gradient 5s linear infinite;
 }
 
-[data-theme="light"] h1 {
-	background-image: radial-gradient(circle, var(--dark), var(--dark-pink));
-}
-
 h2 {
 	font-size: clamp(1.2rem, 1vw + 1rem, 2rem);
 	color: var(--dark-pink);
@@ -68,7 +63,6 @@ h4 {
 	padding: var(--tiny);
 	color: var(--dark);
 	margin: 0;
-	letter-spacing: 1px;
 }
 
 :is(h3, .typed_text) {
@@ -85,6 +79,7 @@ p {
 	line-height: 1.6;
 	font-family: var(--sans);
 }
+
 p + * {
 	margin-top: var(--small);
 }
@@ -106,10 +101,6 @@ a {
 	text-decoration: none;
 }
 
-[data-theme="light"] a {
-	color: var(--less-pink);
-}
-
 a:not(.float_nav_content a) {
 	color: var(--bright-pink);
 	font-weight: 700;
@@ -118,10 +109,6 @@ a:not(.float_nav_content a) {
 	display: inline-block;
 	position: relative;
 	background-color: var(--50-less-white);
-}
-
-[data-theme="light"] a:not(.float_nav_content a) {
-	color: var(--dark-pink);
 }
 
 a:not(.float_nav_content a):hover {
@@ -150,10 +137,6 @@ a:not(.float_nav_content a):hover:after {
 
 strong {
 	font-weight: 700;
-	color: var(--dark-pink);
-}
-
-[data-theme="light"] strong {
 	color: var(--dark-pink);
 }
 
@@ -189,10 +172,6 @@ SVG WAVE
 	background-color: var(--less-dark);
 	background-size: 10px 10px;
 	z-index: -1;
-}
-
-[data-theme="light"] .custom-shape {
-	background-image: radial-gradient(#221126 0.2px, transparent 0.5px);
 }
 
 @media screen and (max-width: 600px) {
@@ -262,21 +241,9 @@ ANIMATION
 	filter: drop-shadow(0 50px 100px var(--pink));
 }
 
-.tiny-float {
-	-webkit-animation: tiny-float 5s ease-in-out infinite;
-	animation: tiny-float 5s ease-in-out infinite;
-	-webkit-filter: drop-shadow(0 50px 100px var(--pink));
-	filter: drop-shadow(0 50px 100px var(--pink));
-}
-
 .tilt:hover {
 	-webkit-animation: tilt 0.5s ease-in-out;
 	animation: tilt 0.5s ease-in-out;
-}
-
-.delay-1s {
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
 }
 
 .wave {

@@ -43,25 +43,3 @@
 	/*transition*/
 	--base-transition: all 0.2s ease-in-out;
 }
-
-[data-theme="light"]:root {
-	--clay-shadow: 0 10px 50px var(--50-less-white), inset 0 -8px 25px var(--grad-purple),
-		inset 0px 5px 20px var(--pink);
-	--less-pink: #391342;
-	--dark-pink: #e96fff;
-	--less-dark: #f5d8fb;
-	/* --less-dark: #413959; */
-	--white: #130d16;
-	--dark: #cfbdd7;
-
-	--25-less-white: #392f3ed8;
-	--50-less-white: #392f3e6f;
-	--50-less-dark: #8d84a57b;
-	--75-less-dark: #dfcde9cc;
-
-	--grad-purple: rgb(79, 31, 138);
-}
-
-/* * {
-	transition: var(--base-transition);
-} */
