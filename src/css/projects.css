@@ -107,12 +107,12 @@
 
 @media (prefers-reduced-motion) and (max-width: 400px) {
 	.project_box {
-		grid-template-rows: 220px 70px 90px 1fr;
+		grid-template-rows: 220px 60px 90px 1fr;
 		transition: ease 1s all;
 	}
 
 	.project_box:hover {
-		grid-template-rows: 270px 70px 90px 1fr;
+		grid-template-rows: 270px 60px 90px 1fr;
 		transition: ease 1s all;
 	}
 

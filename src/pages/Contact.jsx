@@ -11,11 +11,15 @@ const Contact = () => {
 	const [sent, isSent] = useToggle(false);
 	const { width: windowWidth } = useWindowDimensions();
 
-	// FIXME: Add dotenv to protect the key. At https://dashboard.emailjs.com/admin/templates/yn0vzya, enable more security stuff.
 	const sendEmail = (e) => {
 		e.preventDefault();
 		emailjs
-			.sendForm("service_wt1n5fr", "template_ej104ab", formRef.current, "F9Y_vVQS1p8Uu3uud")
+			.sendForm(
+				"service_wt1n5fr",
+				"template_ej104ab",
+				formRef.current,
+				import.meta.env.VITE_API_KEY
+			)
 			.then((result) => {
 				isSent(true);
 				e.target.reset();
