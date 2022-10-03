@@ -13,7 +13,7 @@
 
 .project_box:hover {
 	grid-template-rows: 270px 50px 90px 1fr;
-	transition: ease 1s all;
+	transition: ease 1.5s all;
 }
 
 .project_arrows svg {
@@ -31,7 +31,7 @@
 }
 
 .project_box:hover .project_arrows > :is(*:first-of-type, *:last-of-type) {
-	transition: ease 0.5s all;
+	transition: ease 0.7s all;
 	top: 25%;
 }
 
@@ -50,13 +50,13 @@
 .project_details {
 	padding: 0 var(--base) var(--base);
 	grid-area: content;
-	transition: ease 0.5s all;
+	transition: ease 0.7s all;
 }
 
 .project_box:hover > .project_details > p {
 	font-size: 0.9rem;
 	line-height: 1.2;
-	transition: ease 0.5s all;
+	transition: ease 0.7s all;
 }
 
 .project_image {
@@ -105,15 +105,15 @@
 	background-color: var(--pink);
 }
 
-@media (prefers-reduced-motion) and (max-width: 400px) {
+@media (prefers-reduced-motion) {
 	.project_box {
 		grid-template-rows: 220px 60px 90px 1fr;
-		transition: ease 1s all;
+		transition: ease 1.5s all;
 	}
 
 	.project_box:hover {
 		grid-template-rows: 270px 60px 90px 1fr;
-		transition: ease 1s all;
+		transition: ease 1.5s all;
 	}
 
 	.project_box:hover .project_arrows > :is(*:first-of-type, *:last-of-type) {
